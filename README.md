@@ -27,7 +27,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 ## Module Status
 
 1. Project setup - complete
-2. Authentication - pending
+2. Authentication - complete
 3. Multi-tenant hospital setup - pending
 4. Role-based access control - pending
 

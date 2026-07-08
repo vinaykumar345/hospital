@@ -43,10 +43,52 @@ class SetupHomeScreen extends StatelessWidget {
               Text(
                 'Patient booking, records, reports, reminders, family management, and AI assistant flows will be added in module order.',
               ),
+              SizedBox(height: 24),
+              AuthMethodCard(
+                title: 'Email and password',
+                subtitle: 'Secure login with refresh sessions and MFA support.',
+              ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Mobile OTP',
+                subtitle: 'Request and verify one-time codes for patient access.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class AuthMethodCard extends StatelessWidget {
+  const AuthMethodCard({
+    required this.title,
+    required this.subtitle,
+    super.key,
+  });
+
+  final String title;
+  final String subtitle;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        border: Border.all(color: const Color(0xFFD8E1EA)),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(title, style: const TextStyle(fontWeight: FontWeight.w700)),
+            const SizedBox(height: 6),
+            Text(subtitle),
+          ],
         ),
       ),
     );

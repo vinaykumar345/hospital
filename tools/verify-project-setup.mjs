@@ -12,6 +12,8 @@ const requiredPaths = [
   "docs/API.md",
   "docs/DATABASE.md",
   "apps/api/src/main.ts",
+  "apps/api/src/modules/auth/auth.module.ts",
+  "apps/api/migrations/0001_authentication.sql",
   "apps/api/src/modules/health/health.controller.ts",
   "apps/web/src/main.tsx",
   "apps/mobile/lib/main.dart",

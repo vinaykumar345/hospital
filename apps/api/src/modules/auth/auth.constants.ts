@@ -1,0 +1,7 @@
+export const AUTH_REPOSITORY = Symbol("AUTH_REPOSITORY");
+
+export const ACCESS_TOKEN_TTL_SECONDS = 15 * 60;
+export const REFRESH_TOKEN_TTL_SECONDS = 30 * 24 * 60 * 60;
+export const PASSWORD_RESET_TTL_MINUTES = 30;
+export const OTP_TTL_MINUTES = 10;
+export const MAX_FAILED_LOGIN_ATTEMPTS = 5;

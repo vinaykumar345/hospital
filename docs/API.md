@@ -16,3 +16,16 @@ REST APIs are versioned under `/api/v1`.
 `GET /api/v1/health`
 
 Returns service status and build metadata.
+
+## Authentication
+
+- `POST /api/v1/auth/register`
+- `POST /api/v1/auth/login`
+- `POST /api/v1/auth/refresh`
+- `POST /api/v1/auth/logout`
+- `POST /api/v1/auth/mobile/request-otp`
+- `POST /api/v1/auth/mobile/verify-otp`
+- `POST /api/v1/auth/password/forgot`
+- `POST /api/v1/auth/password/reset`
+
+Authentication responses include short-lived access tokens and rotating refresh tokens. Mobile OTP and password reset delivery are queued through the notification provider once the notification module is enabled.

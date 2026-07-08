@@ -59,7 +59,8 @@ h1 {
   white-space: nowrap;
 }
 
-.workspace {
+.workspace,
+.auth-grid {
   display: grid;
   gap: 16px;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -67,7 +68,12 @@ h1 {
   max-width: 1180px;
 }
 
-.panel {
+.auth-grid {
+  margin-top: 16px;
+}
+
+.panel,
+.auth-panel {
   background: #ffffff;
   border: 1px solid #dfe7ef;
   border-radius: 8px;
@@ -96,6 +102,48 @@ h1 {
   padding: 10px;
 }
 
+.section-title {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.auth-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-panel label {
+  color: #344253;
+  display: grid;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 6px;
+}
+
+.auth-panel input {
+  border: 1px solid #cbd8e3;
+  border-radius: 6px;
+  font: inherit;
+  min-height: 42px;
+  padding: 8px 10px;
+}
+
+.auth-panel button {
+  align-items: center;
+  background: #1d6f66;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 14px;
+}
+
 footer {
   color: #617181;
   margin: 32px auto 0;
@@ -108,7 +156,8 @@ footer {
   }
 
   .topbar,
-  .workspace {
+  .workspace,
+  .auth-grid {
     grid-template-columns: 1fr;
   }
 
