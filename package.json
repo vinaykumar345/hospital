@@ -1,0 +1,22 @@
+{
+  "name": "ai-hospital-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-tenant AI-assisted hospital operations platform.",
+  "workspaces": [
+    "apps/api",
+    "apps/web",
+    "packages/shared"
+  ],
+  "scripts": {
+    "verify": "node tools/verify-project-setup.mjs",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present && npm run verify",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "license": "UNLICENSED"
+}
