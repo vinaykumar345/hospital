@@ -15,3 +15,7 @@ Patients and staff access the correct hospital workspace through the hospital do
 ## Role-Based Menus
 
 Menus and actions appear according to the signed-in user's role and permissions.
+
+## Hospital Operations
+
+Authorized staff can view the configured departments, locations, rooms, and bed availability used across appointments and inpatient workflows.

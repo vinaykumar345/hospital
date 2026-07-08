@@ -63,6 +63,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Role-based access',
                 subtitle: 'Show menus and workflows only when the signed-in role is permitted.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Hospital management',
+                subtitle: 'Manage departments, branches, rooms, beds, and schedules.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

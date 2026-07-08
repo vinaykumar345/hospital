@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Building2, Globe2, KeyRound, MessageSquareText, Palette, ShieldCheck } from "lucide-react";
+import { BedDouble, Building2, DoorOpen, Globe2, KeyRound, MessageSquareText, Palette, ShieldCheck, Stethoscope } from "lucide-react";
 import { AI_REVIEW_DISCLAIMER, PERMISSION_NAMES, ROLE_NAMES } from "@hospital/shared";
 import "./styles.css";
 
@@ -98,6 +98,27 @@ function App() {
           {PERMISSION_NAMES.slice(0, 8).map((permission) => (
             <span key={permission}>{permission.replaceAll("_", " ")}</span>
           ))}
+        </div>
+      </section>
+
+      <section className="tenant-band" aria-label="Hospital management">
+        <div className="section-title">
+          <Building2 aria-hidden="true" size={20} />
+          <h2>Hospital Management</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <Stethoscope aria-hidden="true" size={18} />
+            <span>Departments</span>
+          </div>
+          <div>
+            <DoorOpen aria-hidden="true" size={18} />
+            <span>Rooms</span>
+          </div>
+          <div>
+            <BedDouble aria-hidden="true" size={18} />
+            <span>Beds</span>
+          </div>
         </div>
       </section>
 

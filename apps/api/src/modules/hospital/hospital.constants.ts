@@ -1,0 +1,1 @@
+export const HOSPITAL_REPOSITORY = Symbol("HOSPITAL_REPOSITORY");

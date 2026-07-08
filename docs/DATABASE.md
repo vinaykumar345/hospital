@@ -44,3 +44,13 @@ Defined in `apps/api/migrations/0003_role_based_access_control.sql`.
 
 - `permissions` stores canonical platform permissions.
 - `role_permissions` maps roles to permissions.
+
+## Hospital Management Tables
+
+Defined in `apps/api/migrations/0004_hospital_management.sql`.
+
+- `departments` stores tenant departments.
+- `branches` stores hospital locations.
+- `rooms` stores consultation, ward, ICU, lab, pharmacy, and procedure rooms.
+- `beds` stores bed labels and occupancy status.
+- `doctor_schedules` stores weekly doctor availability by branch and department.

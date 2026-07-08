@@ -15,3 +15,7 @@ Super Admins create a tenant for each hospital organization, map verified domain
 ## Role Management
 
 Only users with `ROLE_MANAGE` can grant or revoke permissions. Review assignments after staff transfers, department changes, and offboarding.
+
+## Hospital Management
+
+Hospital Admins configure profile details, departments, branches, rooms, beds, and schedule foundations before staff and appointment workflows go live.

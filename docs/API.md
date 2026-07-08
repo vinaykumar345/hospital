@@ -47,3 +47,19 @@ Tenant APIs manage hospital SaaS tenants, domain mapping, and white-label brandi
 - `DELETE /api/v1/rbac/role-permissions`
 
 RBAC endpoints require `ROLE_MANAGE`.
+
+## Hospital Management
+
+- `GET /api/v1/hospital/profile`
+- `POST /api/v1/hospital/profile`
+- `GET /api/v1/hospital/departments`
+- `POST /api/v1/hospital/departments`
+- `GET /api/v1/hospital/branches`
+- `POST /api/v1/hospital/branches`
+- `GET /api/v1/hospital/rooms`
+- `POST /api/v1/hospital/rooms`
+- `GET /api/v1/hospital/beds`
+- `POST /api/v1/hospital/beds`
+- `PATCH /api/v1/hospital/beds/{bedId}/status`
+
+Hospital management endpoints require `HOSPITAL_PROFILE_MANAGE`.

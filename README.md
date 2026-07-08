@@ -30,6 +30,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 2. Authentication - complete
 3. Multi-tenant hospital setup - complete
 4. Role-based access control - complete
+5. Hospital management - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 
