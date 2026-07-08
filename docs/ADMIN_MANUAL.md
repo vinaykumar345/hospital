@@ -27,3 +27,7 @@ Hospital Admins create staff profiles after user credentials exist, assign depar
 ## Patient Management
 
 Authorized staff can register patients and maintain subrecords for allergies, medications, contacts, insurance, consents, and visits. Access must follow hospital privacy policy.
+
+## Appointment System
+
+Admins and reception teams configure booking operations around doctor schedules, queues, reminders, and teleconsultation workflows.

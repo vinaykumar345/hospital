@@ -177,6 +177,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Appointment system">
+        <div className="section-title">
+          <CalendarClock aria-hidden="true" size={20} />
+          <h2>Appointment System</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Calendar booking</span>
+          </div>
+          <div>
+            <UsersRound aria-hidden="true" size={18} />
+            <span>Queue management</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Reminders</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

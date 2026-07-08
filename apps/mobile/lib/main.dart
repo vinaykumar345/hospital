@@ -78,6 +78,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Patient management',
                 subtitle: 'Register patients and manage history, allergies, medications, insurance, consents, and visits.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Appointment system',
+                subtitle: 'Book visits, manage walk-ins, queues, reminders, and teleconsultations.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

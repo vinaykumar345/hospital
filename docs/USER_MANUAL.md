@@ -27,3 +27,7 @@ Authorized administrators manage staff profile details and schedules. Staff user
 ## Patient Records
 
 Patient records include registration details, allergies, current medications, emergency contacts, insurance information, consent records, and visit history.
+
+## Appointments
+
+Patients and authorized staff can book appointments, track walk-in queues, and receive reminders when notification delivery is enabled.

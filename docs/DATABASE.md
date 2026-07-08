@@ -67,3 +67,11 @@ Defined in `apps/api/migrations/0006_patient_management.sql`.
 
 - `patients` stores digital registration and patient profile fields.
 - `patient_allergies`, `patient_medications`, `patient_emergency_contacts`, `patient_insurance_details`, `patient_consents`, and `patient_visits` store patient subrecords.
+
+## Appointment System Tables
+
+Defined in `apps/api/migrations/0007_appointment_system.sql`.
+
+- `appointments` stores online, walk-in, and teleconsultation appointments.
+- `appointment_queue` stores queue numbers, queue status, and estimated wait metadata.
+- `appointment_reminders` stores reminder jobs for the notification module.

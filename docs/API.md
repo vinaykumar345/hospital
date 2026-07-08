@@ -87,3 +87,13 @@ Staff management endpoints require `USER_MANAGE`.
 - `POST /api/v1/patients/{patientId}/visits`
 
 Patient read endpoints require `PATIENT_READ`; write endpoints require `PATIENT_WRITE`.
+
+## Appointment System
+
+- `GET /api/v1/appointments`
+- `POST /api/v1/appointments`
+- `PATCH /api/v1/appointments/{appointmentId}/status`
+- `POST /api/v1/appointments/{appointmentId}/queue`
+- `PATCH /api/v1/appointments/{appointmentId}/queue`
+
+Appointment read endpoints require `APPOINTMENT_READ`; write and queue endpoints require `APPOINTMENT_WRITE`.

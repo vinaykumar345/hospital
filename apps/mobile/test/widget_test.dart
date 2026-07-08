@@ -13,6 +13,7 @@ void main() {
     expect(find.text('Hospital management'), findsOneWidget);
     expect(find.text('Staff management'), findsOneWidget);
     expect(find.text('Patient management'), findsOneWidget);
+    expect(find.text('Appointment system'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }
