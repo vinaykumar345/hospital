@@ -19,3 +19,7 @@ Menus and actions appear according to the signed-in user's role and permissions.
 ## Hospital Operations
 
 Authorized staff can view the configured departments, locations, rooms, and bed availability used across appointments and inpatient workflows.
+
+## Staff Profiles
+
+Authorized administrators manage staff profile details and schedules. Staff users see capabilities based on assigned role and permissions.

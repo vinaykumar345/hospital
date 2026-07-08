@@ -19,3 +19,7 @@ Only users with `ROLE_MANAGE` can grant or revoke permissions. Review assignment
 ## Hospital Management
 
 Hospital Admins configure profile details, departments, branches, rooms, beds, and schedule foundations before staff and appointment workflows go live.
+
+## Staff Management
+
+Hospital Admins create staff profiles after user credentials exist, assign departments and branches, manage employment status, and maintain doctor schedules.

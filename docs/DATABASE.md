@@ -54,3 +54,9 @@ Defined in `apps/api/migrations/0004_hospital_management.sql`.
 - `rooms` stores consultation, ward, ICU, lab, pharmacy, and procedure rooms.
 - `beds` stores bed labels and occupancy status.
 - `doctor_schedules` stores weekly doctor availability by branch and department.
+
+## Staff Management Tables
+
+Defined in `apps/api/migrations/0005_staff_management.sql`.
+
+- `staff_profiles` stores employment profile, role, status, department, branch, and license metadata linked to authenticated users.

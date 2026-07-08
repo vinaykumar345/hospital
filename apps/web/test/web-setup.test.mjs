@@ -14,6 +14,8 @@ assert.match(app, /Role-Based Access/);
 assert.match(app, /PERMISSION_NAMES/);
 assert.match(app, /Hospital Management/);
 assert.match(app, /Departments/);
+assert.match(app, /Staff Management/);
+assert.match(app, /Doctor schedules/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

@@ -63,3 +63,13 @@ RBAC endpoints require `ROLE_MANAGE`.
 - `PATCH /api/v1/hospital/beds/{bedId}/status`
 
 Hospital management endpoints require `HOSPITAL_PROFILE_MANAGE`.
+
+## Staff Management
+
+- `GET /api/v1/staff`
+- `POST /api/v1/staff`
+- `PATCH /api/v1/staff/{staffId}/status`
+- `GET /api/v1/staff/doctor-schedules`
+- `POST /api/v1/staff/doctor-schedules`
+
+Staff management endpoints require `USER_MANAGE`.

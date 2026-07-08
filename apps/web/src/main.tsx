@@ -1,6 +1,18 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BedDouble, Building2, DoorOpen, Globe2, KeyRound, MessageSquareText, Palette, ShieldCheck, Stethoscope } from "lucide-react";
+import {
+  BedDouble,
+  Building2,
+  CalendarClock,
+  DoorOpen,
+  Globe2,
+  KeyRound,
+  MessageSquareText,
+  Palette,
+  ShieldCheck,
+  Stethoscope,
+  UsersRound
+} from "lucide-react";
 import { AI_REVIEW_DISCLAIMER, PERMISSION_NAMES, ROLE_NAMES } from "@hospital/shared";
 import "./styles.css";
 
@@ -118,6 +130,27 @@ function App() {
           <div>
             <BedDouble aria-hidden="true" size={18} />
             <span>Beds</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="tenant-band" aria-label="Staff management">
+        <div className="section-title">
+          <UsersRound aria-hidden="true" size={20} />
+          <h2>Staff Management</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <UsersRound aria-hidden="true" size={18} />
+            <span>Staff profiles</span>
+          </div>
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Doctor schedules</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Employment status</span>
           </div>
         </div>
       </section>
