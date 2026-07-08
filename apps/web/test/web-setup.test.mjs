@@ -20,6 +20,8 @@ assert.match(app, /Patient Management/);
 assert.match(app, /Medical history/);
 assert.match(app, /Appointment System/);
 assert.match(app, /Queue management/);
+assert.match(app, /Reception Dashboard/);
+assert.match(app, /Walk-ins/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

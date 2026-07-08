@@ -14,6 +14,7 @@ void main() {
     expect(find.text('Staff management'), findsOneWidget);
     expect(find.text('Patient management'), findsOneWidget);
     expect(find.text('Appointment system'), findsOneWidget);
+    expect(find.text('Reception dashboard'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

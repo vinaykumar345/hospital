@@ -75,3 +75,9 @@ Defined in `apps/api/migrations/0007_appointment_system.sql`.
 - `appointments` stores online, walk-in, and teleconsultation appointments.
 - `appointment_queue` stores queue numbers, queue status, and estimated wait metadata.
 - `appointment_reminders` stores reminder jobs for the notification module.
+
+## Reception Dashboard Views
+
+Defined in `apps/api/migrations/0008_reception_dashboard.sql`.
+
+- `reception_dashboard_queue_summary` summarizes walk-ins and queue states by tenant and service date.

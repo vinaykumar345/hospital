@@ -31,3 +31,7 @@ Authorized staff can register patients and maintain subrecords for allergies, me
 ## Appointment System
 
 Admins and reception teams configure booking operations around doctor schedules, queues, reminders, and teleconsultation workflows.
+
+## Reception Dashboard
+
+Reception teams use the dashboard to monitor walk-ins, queue status, upcoming appointments, check-ins, and cancellations.

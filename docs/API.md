@@ -97,3 +97,9 @@ Patient read endpoints require `PATIENT_READ`; write endpoints require `PATIENT_
 - `PATCH /api/v1/appointments/{appointmentId}/queue`
 
 Appointment read endpoints require `APPOINTMENT_READ`; write and queue endpoints require `APPOINTMENT_WRITE`.
+
+## Reception Dashboard
+
+- `GET /api/v1/dashboards/reception`
+
+Reception dashboard requires `APPOINTMENT_READ` and returns queue, walk-in, checked-in, cancellation, and upcoming appointment metrics.

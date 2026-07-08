@@ -31,3 +31,7 @@ Patient records include registration details, allergies, current medications, em
 ## Appointments
 
 Patients and authorized staff can book appointments, track walk-in queues, and receive reminders when notification delivery is enabled.
+
+## Reception View
+
+Reception users can scan queue state and upcoming appointments from a single dashboard.

@@ -198,6 +198,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Reception dashboard">
+        <div className="section-title">
+          <UsersRound aria-hidden="true" size={20} />
+          <h2>Reception Dashboard</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <UsersRound aria-hidden="true" size={18} />
+            <span>Walk-ins</span>
+          </div>
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Upcoming appointments</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Queue status</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

@@ -83,6 +83,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Appointment system',
                 subtitle: 'Book visits, manage walk-ins, queues, reminders, and teleconsultations.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Reception dashboard',
+                subtitle: 'Track walk-ins, queue status, check-ins, cancellations, and upcoming appointments.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],
