@@ -51,3 +51,7 @@ Authorized users can view lab orders and results. Plain-language summaries are A
 ## Prescriptions
 
 Authorized users can view prescriptions and dispensing status. Interaction warnings are support information and require professional review.
+
+## Invoices
+
+Authorized users can view invoices, line items, discounts, GST, and payment status.

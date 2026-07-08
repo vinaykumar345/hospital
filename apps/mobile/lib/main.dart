@@ -108,6 +108,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Pharmacy module',
                 subtitle: 'Manage prescriptions, stock, expiry alerts, interaction warnings, and dispensing.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Billing module',
+                subtitle: 'Generate invoices, apply discounts and GST, and record payments.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

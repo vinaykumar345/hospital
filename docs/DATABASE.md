@@ -115,3 +115,11 @@ Defined in `apps/api/migrations/0012_pharmacy_module.sql`.
 - `pharmacy_dispenses` stores dispensing events.
 - `pharmacy_interaction_warnings` stores pharmacist-reviewed drug interaction warnings.
 - `pharmacy_expiry_alerts` stores stock expiry alerts.
+
+## Billing Tables
+
+Defined in `apps/api/migrations/0013_billing_module.sql`.
+
+- `invoices` stores invoice totals, GST, discounts, status, and paid amount.
+- `invoice_lines` stores consultation, procedure, lab, pharmacy, and package line items.
+- `invoice_payments` stores cash, card, UPI, bank transfer, and payment gateway payments.

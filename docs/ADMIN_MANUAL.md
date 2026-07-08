@@ -51,3 +51,7 @@ Lab teams maintain test catalogs, create orders, track samples, enter results, a
 ## Pharmacy
 
 Pharmacy teams maintain medicines, stock lots, expiry alerts, prescriptions, interaction warnings, and dispense events.
+
+## Billing
+
+Billing teams generate invoices, add service lines, apply GST and discounts, and record payments without storing payment card secrets.

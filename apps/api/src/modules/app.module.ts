@@ -2,6 +2,7 @@ import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { AuthModule } from "./auth/auth.module.js";
 import { AppointmentModule } from "./appointment/appointment.module.js";
+import { BillingModule } from "./billing/billing.module.js";
 import { DashboardModule } from "./dashboard/dashboard.module.js";
 import { HealthModule } from "./health/health.module.js";
 import { HospitalModule } from "./hospital/hospital.module.js";
@@ -19,6 +20,7 @@ import { TenancyModule } from "./tenancy/tenancy.module.js";
     }),
     AppointmentModule,
     AuthModule,
+    BillingModule,
     DashboardModule,
     HealthModule,
     HospitalModule,

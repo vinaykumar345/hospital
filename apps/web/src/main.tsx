@@ -303,6 +303,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Billing module">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Billing Module</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Invoices</span>
+          </div>
+          <div>
+            <Stethoscope aria-hidden="true" size={18} />
+            <span>GST and discounts</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Payments</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

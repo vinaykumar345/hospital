@@ -139,3 +139,12 @@ Laboratory endpoints require `LAB_ORDER_MANAGE`.
 - `POST /api/v1/pharmacy/interaction-warnings`
 
 Pharmacy endpoints require `PHARMACY_MANAGE`.
+
+## Billing
+
+- `GET /api/v1/billing/invoices`
+- `POST /api/v1/billing/invoices`
+- `POST /api/v1/billing/invoices/{invoiceId}/lines`
+- `POST /api/v1/billing/invoices/{invoiceId}/payments`
+
+Billing endpoints require `BILLING_MANAGE`.
