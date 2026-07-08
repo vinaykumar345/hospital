@@ -165,6 +165,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'AI Voice Follow-Up Agent',
                 subtitle: 'Queue reviewed follow-up calls for visits, labs, medications, and appointment reminders.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Admin analytics',
+                subtitle: 'Track revenue, OPD/IPD, bed occupancy, appointment trends, and reviewed operational insights.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

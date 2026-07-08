@@ -171,3 +171,9 @@ Defined in `apps/api/migrations/0020_ai_voice_follow_up_agent.sql`.
 
 - `voice_follow_up_campaigns` stores reviewed call campaigns and scripts.
 - `voice_follow_up_calls` stores queued call attempts, provider call IDs, and outcomes.
+
+## Admin Analytics Tables
+
+Defined in `apps/api/migrations/0021_admin_analytics_dashboard.sql`.
+
+- `admin_operational_insights` stores AI-generated operational insights with review disclaimers.

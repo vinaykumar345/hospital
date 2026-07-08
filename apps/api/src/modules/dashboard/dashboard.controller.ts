@@ -3,7 +3,7 @@ import { ApiTags } from "@nestjs/swagger";
 import { RequirePermissions } from "../../common/security/permissions.decorator.js";
 import { RbacGuard } from "../../common/security/rbac.guard.js";
 import { DashboardService } from "./dashboard.service.js";
-import { DoctorDashboardQueryDto, NurseDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
+import { AdminAnalyticsQueryDto, DoctorDashboardQueryDto, NurseDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
 
 @ApiTags("dashboards")
 @Controller("dashboards")
@@ -27,5 +27,11 @@ export class DashboardController {
   @RequirePermissions("CLINICAL_NOTE_READ")
   nurse(@Query() query: NurseDashboardQueryDto) {
     return this.dashboards.getNurseDashboard(query);
+  }
+
+  @Get("admin-analytics")
+  @RequirePermissions("AUDIT_READ")
+  adminAnalytics(@Query() query: AdminAnalyticsQueryDto) {
+    return this.dashboards.getAdminAnalytics(query);
   }
 }

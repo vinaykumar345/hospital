@@ -87,3 +87,7 @@ Patient-facing AI responses must remain educational or operational and must not 
 ## AI Voice Follow-Up Agent
 
 Administrators configure reviewed call campaigns and telephony provider settings. Calls must remain support workflows and avoid medical advice.
+
+## Admin Analytics
+
+Hospital Admins can review daily revenue, OPD/IPD statistics, bed occupancy, appointment trends, satisfaction metrics, and AI operational insights.

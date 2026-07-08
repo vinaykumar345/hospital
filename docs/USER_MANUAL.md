@@ -87,3 +87,7 @@ The patient assistant can explain hospital information and reports in simple lan
 ## Follow-Up Calls
 
 Hospitals may use reviewed follow-up calls for reminders and care coordination. Calls do not replace clinical advice.
+
+## Operational Insights
+
+Administrative insights are for hospital operations teams and may include AI-generated content requiring review.

@@ -471,6 +471,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Admin analytics dashboard">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Admin Analytics</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Daily revenue</span>
+          </div>
+          <div>
+            <BedDouble aria-hidden="true" size={18} />
+            <span>Bed occupancy</span>
+          </div>
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Appointment trends</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

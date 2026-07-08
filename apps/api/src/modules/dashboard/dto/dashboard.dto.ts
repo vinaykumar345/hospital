@@ -24,3 +24,5 @@ export class NurseDashboardQueryDto extends ReceptionDashboardQueryDto {
   @IsUUID()
   nurseUserId?: string;
 }
+
+export class AdminAnalyticsQueryDto extends ReceptionDashboardQueryDto {}

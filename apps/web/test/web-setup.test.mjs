@@ -46,6 +46,8 @@ assert.match(app, /AI Patient Assistant/);
 assert.match(app, /No medical advice/);
 assert.match(app, /AI Voice Follow-Up Agent/);
 assert.match(app, /Reviewed scripts/);
+assert.match(app, /Admin Analytics/);
+assert.match(app, /Daily revenue/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

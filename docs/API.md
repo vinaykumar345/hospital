@@ -202,3 +202,9 @@ Patient assistant responses require `AI_AGENT_USE`, include the review disclaime
 - `POST /api/v1/ai-agents/voice-follow-up/calls`
 
 Voice follow-up endpoints require `AI_AGENT_USE`; calls are queued for provider integration and scripts must be reviewed.
+
+## Admin Analytics Dashboard
+
+- `GET /api/v1/dashboards/admin-analytics`
+
+Admin analytics requires `AUDIT_READ` and returns revenue, OPD/IPD, bed occupancy, appointment trends, satisfaction placeholders, and AI operational insights.

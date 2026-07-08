@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { PostgresService } from "../../common/database/postgres.service.js";
-import { DoctorDashboardQueryDto, NurseDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
+import { AI_REVIEW_DISCLAIMER } from "@hospital/shared";
+import { AdminAnalyticsQueryDto, DoctorDashboardQueryDto, NurseDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
 import { DashboardRepository } from "./dashboard.repository.js";
 
 @Injectable()
@@ -96,6 +97,61 @@ export class PostgresDashboardRepository implements DashboardRepository {
     return {
       taskCounts: tasks.rows,
       dueTasks: due.rows
+    };
+  }
+
+  async getAdminAnalytics(query: AdminAnalyticsQueryDto) {
+    const revenue = await this.postgres.query(
+      `select coalesce(sum(total_amount), 0) as daily_revenue
+       from invoices
+       where tenant_id = $1 and created_at::date = coalesce($2::date, current_date)`,
+      [query.tenantId, query.date ?? null]
+    );
+
+    const operations = await this.postgres.query(
+      `select
+        count(*) filter (where visit_type = 'OPD') as opd_visits,
+        count(*) filter (where visit_type = 'IPD') as ipd_visits
+       from patient_visits
+       where tenant_id = $1 and created_at::date = coalesce($2::date, current_date)`,
+      [query.tenantId, query.date ?? null]
+    );
+
+    const beds = await this.postgres.query(
+      `select
+        count(*) as total_beds,
+        count(*) filter (where status = 'OCCUPIED') as occupied_beds
+       from beds
+       where tenant_id = $1`,
+      [query.tenantId]
+    );
+
+    const appointments = await this.postgres.query(
+      `select starts_at::date as date, count(*) as count
+       from appointments
+       where tenant_id = $1 and starts_at >= current_date - interval '14 days'
+       group by starts_at::date
+       order by date`,
+      [query.tenantId]
+    );
+
+    const insights = await this.postgres.query(
+      `select insight_text, disclaimer, created_at
+       from admin_operational_insights
+       where tenant_id = $1
+       order by created_at desc
+       limit 5`,
+      [query.tenantId]
+    );
+
+    return {
+      revenue: revenue.rows[0],
+      opdIpd: operations.rows[0],
+      bedOccupancy: beds.rows[0],
+      appointmentTrends: appointments.rows,
+      satisfaction: { averageScore: null, responses: 0 },
+      aiInsights: insights.rows,
+      disclaimer: AI_REVIEW_DISCLAIMER
     };
   }
 }
