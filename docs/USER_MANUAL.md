@@ -107,3 +107,7 @@ Security-sensitive activity may be logged for privacy, compliance, and operation
 ## Reliability
 
 The platform includes monitoring and logging foundations so hospital administrators can operate it reliably.
+
+## AI Safety Reminder
+
+AI-generated content is a support tool and must be reviewed before use.

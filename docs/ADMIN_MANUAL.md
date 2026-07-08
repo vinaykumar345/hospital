@@ -115,3 +115,7 @@ Engineering administrators should require successful CI checks before deployment
 ## Docker And Kubernetes
 
 Production operators should deploy signed container images, configure secrets through a secret manager, enable TLS ingress, and monitor HPA scaling behavior.
+
+## Production Hardening
+
+Before go-live, complete the production hardening checklist, validate backups, review AI safety labels, verify RBAC, and confirm audit/monitoring coverage.

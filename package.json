@@ -9,7 +9,7 @@
     "packages/shared"
   ],
   "scripts": {
-    "verify": "node tools/verify-project-setup.mjs && node tools/verify-observability.mjs && node tools/verify-ci.mjs && node tools/verify-deployment.mjs",
+    "verify": "node tools/verify-project-setup.mjs && node tools/verify-observability.mjs && node tools/verify-ci.mjs && node tools/verify-deployment.mjs && node tools/verify-hardening.mjs",
     "lint": "npm run lint --workspaces --if-present",
     "test": "npm run test --workspaces --if-present && npm run verify",
     "build": "npm run build --workspaces --if-present"

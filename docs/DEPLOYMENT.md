@@ -34,3 +34,11 @@ GitHub Actions workflows:
 Base manifests in `infra/k8s/base` include namespace, API deployment/service, web deployment/service, ingress, HPAs, API config, secret example, and observability config.
 
 Apply secrets from a secure secret manager before deploying production workloads.
+
+## Production Gate
+
+Before production release, complete `docs/PRODUCTION_HARDENING.md` and run:
+
+```bash
+npm run test
+```
