@@ -37,6 +37,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 9. Reception dashboard - complete
 10. Doctor dashboard - complete
 11. Nurse dashboard - complete
+12. Laboratory module - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 

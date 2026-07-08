@@ -98,6 +98,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Nurse dashboard',
                 subtitle: 'Track shift handovers, medication schedules, nursing tasks, vitals, and observations.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Laboratory module',
+                subtitle: 'Order tests, track samples, enter results, alert critical values, and request reviewed summaries.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

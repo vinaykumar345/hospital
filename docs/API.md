@@ -115,3 +115,14 @@ Doctor dashboard requires `CLINICAL_NOTE_READ` and returns today's appointments,
 - `GET /api/v1/dashboards/nurse`
 
 Nurse dashboard requires `CLINICAL_NOTE_READ` and returns shift handover, medication, task, vital sign, and observation-log task summaries.
+
+## Laboratory
+
+- `GET /api/v1/laboratory/tests`
+- `POST /api/v1/laboratory/tests`
+- `GET /api/v1/laboratory/orders`
+- `POST /api/v1/laboratory/orders`
+- `PATCH /api/v1/laboratory/samples/{sampleId}/status`
+- `POST /api/v1/laboratory/orders/{orderId}/results`
+
+Laboratory endpoints require `LAB_ORDER_MANAGE`.

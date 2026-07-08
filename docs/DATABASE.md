@@ -93,3 +93,14 @@ Defined in `apps/api/migrations/0009_doctor_dashboard.sql`.
 Defined in `apps/api/migrations/0010_nurse_dashboard.sql`.
 
 - `nurse_dashboard_tasks` stores shift handover, medication schedule, nursing task, vital signs, and observation log tasks.
+
+## Laboratory Tables
+
+Defined in `apps/api/migrations/0011_laboratory_module.sql`.
+
+- `lab_tests` stores the test catalog.
+- `lab_orders` stores ordered tests.
+- `lab_samples` tracks sample collection and movement.
+- `lab_results` stores result entry and interpretation.
+- `lab_critical_alerts` stores critical value alerts.
+- `lab_result_summary_requests` stores plain-language AI summary requests with the required review disclaimer.

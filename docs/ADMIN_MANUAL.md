@@ -43,3 +43,7 @@ Doctors use the dashboard to review today's appointments, documentation tasks, f
 ## Nurse Dashboard
 
 Nursing teams use the dashboard to manage shift handovers, medication schedules, nursing tasks, vital signs, and observation logs.
+
+## Laboratory
+
+Lab teams maintain test catalogs, create orders, track samples, enter results, and monitor critical alerts. Plain-language summaries must be reviewed before patient use.

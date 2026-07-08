@@ -26,6 +26,8 @@ assert.match(app, /Doctor Dashboard/);
 assert.match(app, /Pending documentation/);
 assert.match(app, /Nurse Dashboard/);
 assert.match(app, /Shift handover/);
+assert.match(app, /Laboratory Module/);
+assert.match(app, /Sample tracking/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

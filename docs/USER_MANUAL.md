@@ -43,3 +43,7 @@ Doctor users can view daily appointments, pending documentation, and follow-up t
 ## Nurse View
 
 Nurse users can track handover, medication, task, vital sign, and observation work queues.
+
+## Lab Reports
+
+Authorized users can view lab orders and results. Plain-language summaries are AI-generated content and must be reviewed before use.

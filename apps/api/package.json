@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start:dev": "nest start --watch",
-    "test": "node test/api-setup.test.mjs && node test/auth-setup.test.mjs && node test/tenancy-setup.test.mjs && node test/rbac-setup.test.mjs && node test/hospital-setup.test.mjs && node test/staff-setup.test.mjs && node test/patient-setup.test.mjs && node test/appointment-setup.test.mjs && node test/dashboard-setup.test.mjs && node test/doctor-dashboard-setup.test.mjs && node test/nurse-dashboard-setup.test.mjs",
+    "test": "node test/api-setup.test.mjs && node test/auth-setup.test.mjs && node test/tenancy-setup.test.mjs && node test/rbac-setup.test.mjs && node test/hospital-setup.test.mjs && node test/staff-setup.test.mjs && node test/patient-setup.test.mjs && node test/appointment-setup.test.mjs && node test/dashboard-setup.test.mjs && node test/doctor-dashboard-setup.test.mjs && node test/nurse-dashboard-setup.test.mjs && node test/laboratory-setup.test.mjs",
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

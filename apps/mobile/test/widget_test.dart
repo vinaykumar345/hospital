@@ -17,6 +17,7 @@ void main() {
     expect(find.text('Reception dashboard'), findsOneWidget);
     expect(find.text('Doctor dashboard'), findsOneWidget);
     expect(find.text('Nurse dashboard'), findsOneWidget);
+    expect(find.text('Laboratory module'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }
