@@ -103,3 +103,7 @@ Subscription status is managed by platform administrators and may affect access 
 ## Auditability
 
 Security-sensitive activity may be logged for privacy, compliance, and operational review.
+
+## Reliability
+
+The platform includes monitoring and logging foundations so hospital administrators can operate it reliably.

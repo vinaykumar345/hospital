@@ -57,7 +57,9 @@ const requiredPaths = [
   "apps/web/src/main.tsx",
   "apps/mobile/lib/main.dart",
   "infra/docker/docker-compose.yml",
+  "infra/docker/otel-collector.yml",
   "infra/k8s/base/api-deployment.yaml",
+  "infra/k8s/base/observability-configmap.yaml",
   ".github/workflows/ci.yml"
 ];
 

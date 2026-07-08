@@ -103,3 +103,7 @@ Super Admins manage SaaS plans, tenant subscription status, billing intervals, a
 ## Audit Logs
 
 Administrators with audit access can review security events, actor activity, entity history, IP addresses, and request metadata.
+
+## Monitoring And Logging
+
+Operations teams should monitor API latency, request rate, errors, logs, and traces through Prometheus, Grafana, Loki, and OpenTelemetry.
