@@ -7,7 +7,9 @@ import {
   NurseAgentDraftDto,
   PatientAssistantRequestDto,
   ReceptionAgentActionDto,
-  ReceptionAgentRequestDto
+  ReceptionAgentRequestDto,
+  QueueVoiceFollowUpCallDto,
+  VoiceFollowUpCampaignDto
 } from "./dto/ai-agent.dto.js";
 
 @Injectable()
@@ -61,6 +63,16 @@ export class AiAgentService {
       `Patient assistant response for ${dto.requestType.replaceAll("_", " ").toLowerCase()}: ${dto.message}. ` +
       "This is general hospital support information, not a diagnosis or treatment decision. Please contact a licensed clinician for medical advice.";
     return this.repository.recordPatientAssistantResponse(dto, responseText, AI_REVIEW_DISCLAIMER);
+  }
+
+  createVoiceFollowUpCampaign(dto: VoiceFollowUpCampaignDto) {
+    const reviewedScript =
+      `${dto.reviewedScript}\n\nThis call is for follow-up support only and does not provide diagnosis or treatment decisions.`;
+    return this.repository.createVoiceFollowUpCampaign({ ...dto, reviewedScript }, AI_REVIEW_DISCLAIMER);
+  }
+
+  queueVoiceFollowUpCall(dto: QueueVoiceFollowUpCallDto) {
+    return this.repository.queueVoiceFollowUpCall(dto);
   }
 
   private createDoctorDraft(outputType: string, clinicalContext: string): string {

@@ -8,7 +8,9 @@ import {
   NurseAgentDraftDto,
   PatientAssistantRequestDto,
   ReceptionAgentActionDto,
-  ReceptionAgentRequestDto
+  ReceptionAgentRequestDto,
+  QueueVoiceFollowUpCallDto,
+  VoiceFollowUpCampaignDto
 } from "./dto/ai-agent.dto.js";
 
 @ApiTags("ai-agents")
@@ -45,5 +47,17 @@ export class AiAgentController {
   @RequirePermissions("AI_AGENT_USE")
   patientAssistant(@Body() dto: PatientAssistantRequestDto) {
     return this.aiAgents.patientAssistant(dto);
+  }
+
+  @Post("voice-follow-up/campaigns")
+  @RequirePermissions("AI_AGENT_USE")
+  createVoiceFollowUpCampaign(@Body() dto: VoiceFollowUpCampaignDto) {
+    return this.aiAgents.createVoiceFollowUpCampaign(dto);
+  }
+
+  @Post("voice-follow-up/calls")
+  @RequirePermissions("AI_AGENT_USE")
+  queueVoiceFollowUpCall(@Body() dto: QueueVoiceFollowUpCallDto) {
+    return this.aiAgents.queueVoiceFollowUpCall(dto);
   }
 }

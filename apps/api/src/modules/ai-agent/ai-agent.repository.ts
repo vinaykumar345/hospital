@@ -3,7 +3,9 @@ import {
   NurseAgentDraftDto,
   PatientAssistantRequestDto,
   ReceptionAgentActionDto,
-  ReceptionAgentRequestDto
+  ReceptionAgentRequestDto,
+  QueueVoiceFollowUpCallDto,
+  VoiceFollowUpCampaignDto
 } from "./dto/ai-agent.dto.js";
 
 export interface AiAgentRepository {
@@ -13,4 +15,6 @@ export interface AiAgentRepository {
   recordDoctorDraft(input: DoctorAgentDraftDto, draftText: string, disclaimer: string): Promise<unknown>;
   recordNurseDraft(input: NurseAgentDraftDto, draftText: string, disclaimer: string): Promise<unknown>;
   recordPatientAssistantResponse(input: PatientAssistantRequestDto, responseText: string, disclaimer: string): Promise<unknown>;
+  createVoiceFollowUpCampaign(input: VoiceFollowUpCampaignDto, disclaimer: string): Promise<unknown>;
+  queueVoiceFollowUpCall(input: QueueVoiceFollowUpCallDto): Promise<unknown>;
 }

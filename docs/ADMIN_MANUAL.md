@@ -83,3 +83,7 @@ Nurses can create review-gated handover, medication schedule, task, vital sign, 
 ## AI Patient Assistant
 
 Patient-facing AI responses must remain educational or operational and must not provide final diagnosis or treatment instructions.
+
+## AI Voice Follow-Up Agent
+
+Administrators configure reviewed call campaigns and telephony provider settings. Calls must remain support workflows and avoid medical advice.

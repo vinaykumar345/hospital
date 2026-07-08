@@ -5,7 +5,9 @@ import {
   NurseAgentDraftDto,
   PatientAssistantRequestDto,
   ReceptionAgentActionDto,
-  ReceptionAgentRequestDto
+  ReceptionAgentRequestDto,
+  QueueVoiceFollowUpCallDto,
+  VoiceFollowUpCampaignDto
 } from "./dto/ai-agent.dto.js";
 import { AiAgentRepository } from "./ai-agent.repository.js";
 
@@ -94,6 +96,24 @@ export class PostgresAiAgentRepository implements AiAgentRepository {
        values ($1, $2, $3, $4, $5, $6)
        returning *`,
       [input.tenantId, interaction.rows[0].id, input.patientId, input.requestType, responseText, disclaimer]
+    );
+    return result.rows[0];
+  }
+
+  async createVoiceFollowUpCampaign(input: VoiceFollowUpCampaignDto, disclaimer: string) {
+    const result = await this.postgres.query(
+      `insert into voice_follow_up_campaigns (tenant_id, name, campaign_type, reviewed_script, disclaimer)
+       values ($1, $2, $3, $4, $5) returning *`,
+      [input.tenantId, input.name, input.campaignType, input.reviewedScript, disclaimer]
+    );
+    return result.rows[0];
+  }
+
+  async queueVoiceFollowUpCall(input: QueueVoiceFollowUpCallDto) {
+    const result = await this.postgres.query(
+      `insert into voice_follow_up_calls (tenant_id, campaign_id, patient_id, phone_number)
+       values ($1, $2, $3, $4) returning *`,
+      [input.tenantId, input.campaignId, input.patientId, input.phoneNumber]
     );
     return result.rows[0];
   }

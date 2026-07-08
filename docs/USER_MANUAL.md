@@ -83,3 +83,7 @@ Nurse-facing AI drafts are support tools only and must be reviewed before use.
 ## AI Patient Assistant
 
 The patient assistant can explain hospital information and reports in simple language, but it does not replace medical advice from a licensed clinician.
+
+## Follow-Up Calls
+
+Hospitals may use reviewed follow-up calls for reminders and care coordination. Calls do not replace clinical advice.

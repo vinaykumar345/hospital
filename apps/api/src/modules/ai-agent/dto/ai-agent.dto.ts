@@ -100,3 +100,42 @@ export class PatientAssistantRequestDto {
   @IsNotEmpty()
   message!: string;
 }
+
+export class VoiceFollowUpCampaignDto {
+  @ApiProperty()
+  @IsUUID()
+  tenantId!: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  name!: string;
+
+  @ApiProperty({ enum: ["POST_VISIT", "MEDICATION_ADHERENCE", "LAB_FOLLOW_UP", "APPOINTMENT_REMINDER"] })
+  @IsIn(["POST_VISIT", "MEDICATION_ADHERENCE", "LAB_FOLLOW_UP", "APPOINTMENT_REMINDER"])
+  campaignType!: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  reviewedScript!: string;
+}
+
+export class QueueVoiceFollowUpCallDto {
+  @ApiProperty()
+  @IsUUID()
+  tenantId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  campaignId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  patientId!: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  phoneNumber!: string;
+}

@@ -195,3 +195,10 @@ Nurse agent drafts require `AI_AGENT_USE` and must be reviewed before use.
 - `POST /api/v1/ai-agents/patient/respond`
 
 Patient assistant responses require `AI_AGENT_USE`, include the review disclaimer, and must not be treated as medical advice.
+
+## AI Voice Calling Patient Follow-Up Agent
+
+- `POST /api/v1/ai-agents/voice-follow-up/campaigns`
+- `POST /api/v1/ai-agents/voice-follow-up/calls`
+
+Voice follow-up endpoints require `AI_AGENT_USE`; calls are queued for provider integration and scripts must be reviewed.

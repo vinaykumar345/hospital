@@ -164,3 +164,10 @@ Defined in `apps/api/migrations/0018_ai_nurse_agent.sql`.
 Defined in `apps/api/migrations/0019_ai_patient_assistant.sql`.
 
 - `patient_assistant_responses` stores patient-facing FAQ, report explanation, education, appointment recommendation, and follow-up reminder responses with safety disclaimers.
+
+## AI Voice Follow-Up Tables
+
+Defined in `apps/api/migrations/0020_ai_voice_follow_up_agent.sql`.
+
+- `voice_follow_up_campaigns` stores reviewed call campaigns and scripts.
+- `voice_follow_up_calls` stores queued call attempts, provider call IDs, and outcomes.

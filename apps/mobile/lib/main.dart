@@ -160,6 +160,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'AI Patient Assistant',
                 subtitle: 'Explain hospital information, reports, appointments, education, and follow-ups without medical advice.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'AI Voice Follow-Up Agent',
+                subtitle: 'Queue reviewed follow-up calls for visits, labs, medications, and appointment reminders.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

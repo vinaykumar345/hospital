@@ -30,6 +30,7 @@ void main() {
     expect(find.text('AI Doctor Agent'), findsOneWidget);
     expect(find.text('AI Nurse Agent'), findsOneWidget);
     expect(find.text('AI Patient Assistant'), findsOneWidget);
+    expect(find.text('AI Voice Follow-Up Agent'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }
