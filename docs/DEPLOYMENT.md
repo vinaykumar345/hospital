@@ -8,6 +8,34 @@ Use Docker Compose for local PostgreSQL, Redis, Elasticsearch, Loki, Prometheus,
 docker compose -f infra/docker/docker-compose.yml up
 ```
 
+## Render Dev Environment
+
+The repository includes `render.yaml` for a development Blueprint. It creates:
+
+- `ai-hospital-assistant-api-dev` from `apps/api/Dockerfile`
+- `ai-hospital-assistant-web-dev` from `apps/web/Dockerfile`
+- Render Postgres for `DATABASE_URL`
+- Render Key Value for `REDIS_URL`
+
+Deploy from the Render dashboard:
+
+1. Connect the GitHub repository to Render.
+2. Choose **New > Blueprint** and select this repository.
+3. Confirm the services from `render.yaml`.
+4. Enter prompted secret values:
+   - `S3_BUCKET`: use a dev bucket name, or a placeholder until uploads are wired.
+   - `ELASTICSEARCH_URL`: use a managed Elasticsearch/OpenSearch endpoint, or a placeholder until search is tested.
+5. Deploy the Blueprint.
+6. After the API URL is created, replace the API service `CORS_ORIGIN` value with the Render web URL instead of `*`.
+
+The API health check is:
+
+```text
+/api/v1/health
+```
+
+The current SQL migrations live in `apps/api/migrations`. Until a migration runner is added, apply these migrations to the Render Postgres database before testing workflows that write or read tenant data.
+
 ## Kubernetes
 
 Base manifests live in `infra/k8s/base`. Environment overlays will be added as deployment hardening progresses.

@@ -12,3 +12,4 @@ RUN npm run build --workspace @hospital/web
 
 FROM nginx:1.27-alpine AS runner
 COPY --from=build /app/apps/web/dist /usr/share/nginx/html
+COPY apps/web/nginx.conf.template /etc/nginx/templates/default.conf.template
