@@ -44,6 +44,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 16. Patient mobile app - complete
 17. Notification system - complete
 18. AI Reception Agent - complete
+19. AI Doctor Agent - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 

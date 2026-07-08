@@ -71,3 +71,7 @@ Users may receive email, SMS, push, or WhatsApp notifications according to hospi
 ## AI Reception Help
 
 The reception assistant can help with hospital logistics such as appointments, queues, departments, and FAQs. AI-generated content must be reviewed before use.
+
+## AI Clinical Drafts
+
+Clinician-facing AI drafts are support tools only. They must be reviewed and accepted by qualified staff before use.

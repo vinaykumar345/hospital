@@ -177,3 +177,9 @@ Notification administration requires `HOSPITAL_PROFILE_MANAGE`.
 - `POST /api/v1/ai-agents/reception/actions`
 
 AI agent endpoints require `AI_AGENT_USE`. Responses include the required AI review disclaimer.
+
+## AI Doctor Agent
+
+- `POST /api/v1/ai-agents/doctor/draft`
+
+Doctor agent drafts require `AI_AGENT_USE`. Drafts are review-only and must not be treated as final medical advice.

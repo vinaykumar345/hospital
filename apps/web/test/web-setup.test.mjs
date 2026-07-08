@@ -38,6 +38,8 @@ assert.match(app, /Notification System/);
 assert.match(app, /Email and SMS/);
 assert.match(app, /AI Reception Agent/);
 assert.match(app, /Queue estimates/);
+assert.match(app, /AI Doctor Agent/);
+assert.match(app, /Clinician review/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

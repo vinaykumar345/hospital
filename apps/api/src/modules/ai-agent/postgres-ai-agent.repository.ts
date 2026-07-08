@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PostgresService } from "../../common/database/postgres.service.js";
-import { ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
+import { DoctorAgentDraftDto, ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
 import { AiAgentRepository } from "./ai-agent.repository.js";
 
 @Injectable()
@@ -39,5 +39,22 @@ export class PostgresAiAgentRepository implements AiAgentRepository {
       waiting: Number(result.rows[0]?.waiting ?? 0),
       averageWaitMinutes: Number(result.rows[0]?.average_wait_minutes ?? 0)
     };
+  }
+
+  async recordDoctorDraft(input: DoctorAgentDraftDto, draftText: string, disclaimer: string) {
+    const interaction = await this.postgres.query<{ id: string }>(
+      `insert into ai_agent_interactions (tenant_id, patient_id, agent_type, user_message, response_text, disclaimer)
+       values ($1, $2, 'DOCTOR', $3, $4, $5)
+       returning id`,
+      [input.tenantId, input.patientId, input.clinicalContext, draftText, disclaimer]
+    );
+
+    const result = await this.postgres.query(
+      `insert into doctor_agent_outputs (tenant_id, interaction_id, doctor_user_id, patient_id, output_type, draft_text, disclaimer)
+       values ($1, $2, $3, $4, $5, $6, $7)
+       returning *`,
+      [input.tenantId, interaction.rows[0].id, input.doctorUserId, input.patientId, input.outputType, draftText, disclaimer]
+    );
+    return result.rows[0];
   }
 }

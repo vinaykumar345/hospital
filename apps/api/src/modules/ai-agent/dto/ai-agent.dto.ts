@@ -35,3 +35,26 @@ export class ReceptionAgentActionDto {
   @IsNotEmpty()
   payloadJson!: string;
 }
+
+export class DoctorAgentDraftDto {
+  @ApiProperty()
+  @IsUUID()
+  tenantId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  doctorUserId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  patientId!: string;
+
+  @ApiProperty({ enum: ["PATIENT_SUMMARY", "CONSULTATION_NOTE", "DIFFERENTIAL_SUGGESTIONS", "MEDICATION_INTERACTIONS", "REFERRAL_LETTER", "DISCHARGE_SUMMARY", "FOLLOW_UP_PLAN"] })
+  @IsIn(["PATIENT_SUMMARY", "CONSULTATION_NOTE", "DIFFERENTIAL_SUGGESTIONS", "MEDICATION_INTERACTIONS", "REFERRAL_LETTER", "DISCHARGE_SUMMARY", "FOLLOW_UP_PLAN"])
+  outputType!: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  clinicalContext!: string;
+}

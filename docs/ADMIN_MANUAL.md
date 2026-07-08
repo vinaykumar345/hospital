@@ -71,3 +71,7 @@ Administrators configure channel templates and user preferences. Provider creden
 ## AI Reception Agent
 
 Reception teams can use the AI agent for appointment drafts, queue estimates, FAQs, and department routing. Outputs must be reviewed before use.
+
+## AI Doctor Agent
+
+Doctors can create review-gated clinical drafts. Differential diagnosis suggestions and medication interaction highlights require licensed clinician review.

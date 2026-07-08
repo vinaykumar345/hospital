@@ -387,6 +387,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="AI Doctor Agent">
+        <div className="section-title">
+          <Stethoscope aria-hidden="true" size={20} />
+          <h2>AI Doctor Agent</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <Stethoscope aria-hidden="true" size={18} />
+            <span>Clinical drafts</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Differential suggestions</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Clinician review</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

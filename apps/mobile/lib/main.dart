@@ -145,6 +145,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'AI Reception Agent',
                 subtitle: 'Get help with appointments, department routing, FAQs, and queue estimates with review safeguards.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'AI Doctor Agent',
+                subtitle: 'Assist clinicians with reviewed summaries, notes, referrals, discharge drafts, and follow-up plans.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

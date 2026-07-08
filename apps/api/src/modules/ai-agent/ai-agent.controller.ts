@@ -3,7 +3,7 @@ import { ApiTags } from "@nestjs/swagger";
 import { RequirePermissions } from "../../common/security/permissions.decorator.js";
 import { RbacGuard } from "../../common/security/rbac.guard.js";
 import { AiAgentService } from "./ai-agent.service.js";
-import { ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
+import { DoctorAgentDraftDto, ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
 
 @ApiTags("ai-agents")
 @Controller("ai-agents")
@@ -21,5 +21,11 @@ export class AiAgentController {
   @RequirePermissions("AI_AGENT_USE")
   recordReceptionAction(@Body() dto: ReceptionAgentActionDto) {
     return this.aiAgents.recordReceptionAction(dto);
+  }
+
+  @Post("doctor/draft")
+  @RequirePermissions("AI_AGENT_USE")
+  doctorDraft(@Body() dto: DoctorAgentDraftDto) {
+    return this.aiAgents.doctorDraft(dto);
   }
 }

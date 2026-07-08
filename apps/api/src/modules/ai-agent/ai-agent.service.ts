@@ -2,7 +2,7 @@ import { Inject, Injectable } from "@nestjs/common";
 import { AI_REVIEW_DISCLAIMER } from "@hospital/shared";
 import { AI_AGENT_REPOSITORY } from "./ai-agent.constants.js";
 import { AiAgentRepository } from "./ai-agent.repository.js";
-import { ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
+import { DoctorAgentDraftDto, ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
 
 @Injectable()
 export class AiAgentService {
@@ -38,5 +38,21 @@ export class AiAgentService {
 
   recordReceptionAction(dto: ReceptionAgentActionDto) {
     return this.repository.recordReceptionAction(dto);
+  }
+
+  doctorDraft(dto: DoctorAgentDraftDto) {
+    const draftText = this.createDoctorDraft(dto.outputType, dto.clinicalContext);
+    return this.repository.recordDoctorDraft(dto, draftText, AI_REVIEW_DISCLAIMER);
+  }
+
+  private createDoctorDraft(outputType: string, clinicalContext: string): string {
+    const prefix = "Draft for clinician review only.";
+    if (outputType === "DIFFERENTIAL_SUGGESTIONS") {
+      return `${prefix} Possible differential diagnoses are suggestions only and must be confirmed or rejected by a licensed clinician. Context considered: ${clinicalContext}`;
+    }
+    if (outputType === "MEDICATION_INTERACTIONS") {
+      return `${prefix} Potential medication interaction highlights require pharmacist or clinician verification. Context considered: ${clinicalContext}`;
+    }
+    return `${prefix} ${outputType.replaceAll("_", " ").toLowerCase()} based on provided clinical context: ${clinicalContext}`;
   }
 }

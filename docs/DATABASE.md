@@ -146,3 +146,9 @@ Defined in `apps/api/migrations/0016_ai_reception_agent.sql`.
 
 - `ai_agent_interactions` stores reception agent messages, responses, disclaimers, and review metadata.
 - `reception_agent_actions` stores action drafts for appointment booking, department routing, queue updates, and FAQs.
+
+## AI Doctor Agent Tables
+
+Defined in `apps/api/migrations/0017_ai_doctor_agent.sql`.
+
+- `doctor_agent_outputs` stores review-gated doctor assistant drafts for summaries, notes, differential suggestions, medication interaction highlights, referrals, discharge summaries, and follow-up plans.
