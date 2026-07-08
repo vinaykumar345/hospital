@@ -53,6 +53,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Mobile OTP',
                 subtitle: 'Request and verify one-time codes for patient access.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Hospital tenant',
+                subtitle: 'Resolve hospital domain, branding, and tenant-isolated records.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

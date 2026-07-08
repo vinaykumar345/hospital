@@ -8,6 +8,8 @@ assert.match(app, /AI_REVIEW_DISCLAIMER/);
 assert.match(app, /ROLE_NAMES/);
 assert.match(app, /Email Login/);
 assert.match(app, /Mobile OTP/);
+assert.match(app, /Hospital Tenant Setup/);
+assert.match(app, /Domain mapping/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

@@ -8,6 +8,7 @@ void main() {
     expect(find.text('Mobile foundation ready'), findsOneWidget);
     expect(find.text('Email and password'), findsOneWidget);
     expect(find.text('Mobile OTP'), findsOneWidget);
+    expect(find.text('Hospital tenant'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

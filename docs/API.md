@@ -29,3 +29,13 @@ Returns service status and build metadata.
 - `POST /api/v1/auth/password/reset`
 
 Authentication responses include short-lived access tokens and rotating refresh tokens. Mobile OTP and password reset delivery are queued through the notification provider once the notification module is enabled.
+
+## Tenancy
+
+- `POST /api/v1/tenants`
+- `GET /api/v1/tenants/{tenantId}`
+- `GET /api/v1/tenants/domain/{domain}`
+- `GET /api/v1/tenants/{tenantId}/branding`
+- `PATCH /api/v1/tenants/{tenantId}/branding`
+
+Tenant APIs manage hospital SaaS tenants, domain mapping, and white-label branding foundations.

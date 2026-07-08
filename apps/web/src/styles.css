@@ -73,7 +73,8 @@ h1 {
 }
 
 .panel,
-.auth-panel {
+.auth-panel,
+.tenant-band {
   background: #ffffff;
   border: 1px solid #dfe7ef;
   border-radius: 8px;
@@ -142,6 +143,30 @@ h1 {
   justify-content: center;
   min-height: 42px;
   padding: 8px 14px;
+}
+
+.tenant-band {
+  margin: 16px auto 0;
+  max-width: 1180px;
+}
+
+.tenant-actions {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.tenant-actions div {
+  align-items: center;
+  background: #f7fafc;
+  border: 1px solid #dfe7ef;
+  border-radius: 6px;
+  color: #2f3f51;
+  display: flex;
+  font-weight: 700;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px;
 }
 
 footer {

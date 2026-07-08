@@ -26,3 +26,14 @@ Defined in `apps/api/migrations/0001_authentication.sql`.
 - `password_reset_tokens` stores hashed reset tokens with expiry and consumption state.
 - `auth_delivery_outbox` queues OTP and password reset messages for the notification delivery worker.
 - `audit_events` records authentication events and later expands into platform-wide audit logging.
+
+## Multi-Tenant Hospital Setup Tables
+
+Defined in `apps/api/migrations/0002_multi_tenant_hospital_setup.sql`.
+
+- `tenants` stores the SaaS tenant record.
+- `tenant_domains` maps custom domains to tenants.
+- `tenant_branding` stores logo, color, mobile app, and email branding defaults.
+- `hospital_profiles` stores legal and contact profile details for each hospital tenant.
+
+Tenant-owned authentication tables have row-level security enabled and use `current_setting('app.tenant_id', true)` for isolation.

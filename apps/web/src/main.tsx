@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { KeyRound, MessageSquareText, ShieldCheck } from "lucide-react";
+import { Building2, Globe2, KeyRound, MessageSquareText, Palette, ShieldCheck } from "lucide-react";
 import { AI_REVIEW_DISCLAIMER, ROLE_NAMES } from "@hospital/shared";
 import "./styles.css";
 
@@ -66,6 +66,27 @@ function App() {
           </label>
           <button type="button">Verify OTP</button>
         </form>
+      </section>
+
+      <section className="tenant-band" aria-label="Tenant setup">
+        <div className="section-title">
+          <Building2 aria-hidden="true" size={20} />
+          <h2>Hospital Tenant Setup</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <Globe2 aria-hidden="true" size={18} />
+            <span>Domain mapping</span>
+          </div>
+          <div>
+            <Palette aria-hidden="true" size={18} />
+            <span>Branding controls</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Tenant-isolated records</span>
+          </div>
+        </div>
       </section>
 
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
