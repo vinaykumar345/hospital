@@ -54,6 +54,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 26. Audit logs - complete
 27. Monitoring and logging - complete
 28. CI/CD pipeline - complete
+29. Docker and Kubernetes deployment - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 

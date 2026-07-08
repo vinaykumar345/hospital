@@ -60,6 +60,7 @@ const requiredPaths = [
   "infra/docker/otel-collector.yml",
   "infra/k8s/base/api-deployment.yaml",
   "infra/k8s/base/observability-configmap.yaml",
+  "infra/k8s/base/web-deployment.yaml",
   ".github/workflows/ci.yml"
 ];
 

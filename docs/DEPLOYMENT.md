@@ -28,3 +28,9 @@ GitHub Actions workflows:
 
 - `.github/workflows/ci.yml` runs workspace verification, build hooks, Dockerfile checks, and Kubernetes manifest checks.
 - `.github/workflows/release.yml` builds API and web container images from a manually supplied image tag.
+
+## Kubernetes Manifests
+
+Base manifests in `infra/k8s/base` include namespace, API deployment/service, web deployment/service, ingress, HPAs, API config, secret example, and observability config.
+
+Apply secrets from a secure secret manager before deploying production workloads.

@@ -111,3 +111,7 @@ Operations teams should monitor API latency, request rate, errors, logs, and tra
 ## CI/CD
 
 Engineering administrators should require successful CI checks before deployment and use protected release environments for production promotion.
+
+## Docker And Kubernetes
+
+Production operators should deploy signed container images, configure secrets through a secret manager, enable TLS ingress, and monitor HPA scaling behavior.
