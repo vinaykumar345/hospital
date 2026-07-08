@@ -189,3 +189,9 @@ Doctor agent drafts require `AI_AGENT_USE`. Drafts are review-only and must not 
 - `POST /api/v1/ai-agents/nurse/draft`
 
 Nurse agent drafts require `AI_AGENT_USE` and must be reviewed before use.
+
+## AI Patient Assistant
+
+- `POST /api/v1/ai-agents/patient/respond`
+
+Patient assistant responses require `AI_AGENT_USE`, include the review disclaimer, and must not be treated as medical advice.

@@ -158,3 +158,9 @@ Defined in `apps/api/migrations/0017_ai_doctor_agent.sql`.
 Defined in `apps/api/migrations/0018_ai_nurse_agent.sql`.
 
 - `nurse_agent_outputs` stores review-gated nurse assistant drafts for handovers, medication schedules, tasks, vital sign notes, and observation logs.
+
+## AI Patient Assistant Tables
+
+Defined in `apps/api/migrations/0019_ai_patient_assistant.sql`.
+
+- `patient_assistant_responses` stores patient-facing FAQ, report explanation, education, appointment recommendation, and follow-up reminder responses with safety disclaimers.

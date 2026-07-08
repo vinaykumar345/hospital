@@ -42,6 +42,8 @@ assert.match(app, /AI Doctor Agent/);
 assert.match(app, /Clinician review/);
 assert.match(app, /AI Nurse Agent/);
 assert.match(app, /Handover drafts/);
+assert.match(app, /AI Patient Assistant/);
+assert.match(app, /No medical advice/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

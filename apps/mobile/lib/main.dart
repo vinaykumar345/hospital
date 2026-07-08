@@ -155,6 +155,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'AI Nurse Agent',
                 subtitle: 'Assist nurses with reviewed handovers, medication schedules, tasks, vitals, and observations.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'AI Patient Assistant',
+                subtitle: 'Explain hospital information, reports, appointments, education, and follow-ups without medical advice.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

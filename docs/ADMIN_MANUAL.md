@@ -79,3 +79,7 @@ Doctors can create review-gated clinical drafts. Differential diagnosis suggesti
 ## AI Nurse Agent
 
 Nurses can create review-gated handover, medication schedule, task, vital sign, and observation drafts.
+
+## AI Patient Assistant
+
+Patient-facing AI responses must remain educational or operational and must not provide final diagnosis or treatment instructions.

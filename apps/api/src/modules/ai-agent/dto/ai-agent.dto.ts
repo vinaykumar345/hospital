@@ -81,3 +81,22 @@ export class NurseAgentDraftDto {
   @IsNotEmpty()
   nursingContext!: string;
 }
+
+export class PatientAssistantRequestDto {
+  @ApiProperty()
+  @IsUUID()
+  tenantId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  patientId!: string;
+
+  @ApiProperty({ enum: ["HOSPITAL_FAQ", "REPORT_EXPLANATION", "PATIENT_EDUCATION", "APPOINTMENT_RECOMMENDATION", "FOLLOW_UP_REMINDER"] })
+  @IsIn(["HOSPITAL_FAQ", "REPORT_EXPLANATION", "PATIENT_EDUCATION", "APPOINTMENT_RECOMMENDATION", "FOLLOW_UP_REMINDER"])
+  requestType!: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  message!: string;
+}

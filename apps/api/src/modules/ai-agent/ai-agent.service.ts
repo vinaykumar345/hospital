@@ -2,7 +2,13 @@ import { Inject, Injectable } from "@nestjs/common";
 import { AI_REVIEW_DISCLAIMER } from "@hospital/shared";
 import { AI_AGENT_REPOSITORY } from "./ai-agent.constants.js";
 import { AiAgentRepository } from "./ai-agent.repository.js";
-import { DoctorAgentDraftDto, NurseAgentDraftDto, ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
+import {
+  DoctorAgentDraftDto,
+  NurseAgentDraftDto,
+  PatientAssistantRequestDto,
+  ReceptionAgentActionDto,
+  ReceptionAgentRequestDto
+} from "./dto/ai-agent.dto.js";
 
 @Injectable()
 export class AiAgentService {
@@ -48,6 +54,13 @@ export class AiAgentService {
   nurseDraft(dto: NurseAgentDraftDto) {
     const draftText = `Draft for nurse review only. ${dto.outputType.replaceAll("_", " ").toLowerCase()} based on provided nursing context: ${dto.nursingContext}`;
     return this.repository.recordNurseDraft(dto, draftText, AI_REVIEW_DISCLAIMER);
+  }
+
+  patientAssistant(dto: PatientAssistantRequestDto) {
+    const responseText =
+      `Patient assistant response for ${dto.requestType.replaceAll("_", " ").toLowerCase()}: ${dto.message}. ` +
+      "This is general hospital support information, not a diagnosis or treatment decision. Please contact a licensed clinician for medical advice.";
+    return this.repository.recordPatientAssistantResponse(dto, responseText, AI_REVIEW_DISCLAIMER);
   }
 
   private createDoctorDraft(outputType: string, clinicalContext: string): string {

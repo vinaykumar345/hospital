@@ -46,6 +46,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 18. AI Reception Agent - complete
 19. AI Doctor Agent - complete
 20. AI Nurse Agent - complete
+21. AI Patient Assistant - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 
