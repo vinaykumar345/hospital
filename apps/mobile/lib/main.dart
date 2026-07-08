@@ -140,6 +140,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Notifications',
                 subtitle: 'Receive email, SMS, push, and WhatsApp reminders according to preferences.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'AI Reception Agent',
+                subtitle: 'Get help with appointments, department routing, FAQs, and queue estimates with review safeguards.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

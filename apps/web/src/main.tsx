@@ -366,6 +366,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="AI Reception Agent">
+        <div className="section-title">
+          <MessageSquareText aria-hidden="true" size={20} />
+          <h2>AI Reception Agent</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Appointment drafts</span>
+          </div>
+          <div>
+            <UsersRound aria-hidden="true" size={18} />
+            <span>Queue estimates</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Reviewed responses</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

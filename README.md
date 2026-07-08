@@ -43,6 +43,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 15. Insurance module - complete
 16. Patient mobile app - complete
 17. Notification system - complete
+18. AI Reception Agent - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 

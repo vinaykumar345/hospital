@@ -67,3 +67,7 @@ Administrators should configure tenant branding, patient access policies, and no
 ## Notifications
 
 Administrators configure channel templates and user preferences. Provider credentials must be managed through deployment secrets.
+
+## AI Reception Agent
+
+Reception teams can use the AI agent for appointment drafts, queue estimates, FAQs, and department routing. Outputs must be reviewed before use.

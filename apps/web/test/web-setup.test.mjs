@@ -36,6 +36,8 @@ assert.match(app, /Insurance Module/);
 assert.match(app, /Claim preparation/);
 assert.match(app, /Notification System/);
 assert.match(app, /Email and SMS/);
+assert.match(app, /AI Reception Agent/);
+assert.match(app, /Queue estimates/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

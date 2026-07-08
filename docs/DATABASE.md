@@ -139,3 +139,10 @@ Defined in `apps/api/migrations/0015_notification_system.sql`.
 - `notification_templates` stores tenant-specific email, SMS, push, and WhatsApp templates.
 - `notification_deliveries` stores provider-neutral delivery queue records.
 - `notification_preferences` stores user channel preferences.
+
+## AI Reception Agent Tables
+
+Defined in `apps/api/migrations/0016_ai_reception_agent.sql`.
+
+- `ai_agent_interactions` stores reception agent messages, responses, disclaimers, and review metadata.
+- `reception_agent_actions` stores action drafts for appointment booking, department routing, queue updates, and FAQs.

@@ -67,3 +67,7 @@ Patients can use the mobile app to book appointments, view prescriptions, view l
 ## Notifications
 
 Users may receive email, SMS, push, or WhatsApp notifications according to hospital configuration and channel preferences.
+
+## AI Reception Help
+
+The reception assistant can help with hospital logistics such as appointments, queues, departments, and FAQs. AI-generated content must be reviewed before use.

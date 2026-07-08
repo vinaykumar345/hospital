@@ -170,3 +170,10 @@ Insurance endpoints require `INSURANCE_MANAGE`.
 - `POST /api/v1/notifications/preferences`
 
 Notification administration requires `HOSPITAL_PROFILE_MANAGE`.
+
+## AI Reception Agent
+
+- `POST /api/v1/ai-agents/reception/respond`
+- `POST /api/v1/ai-agents/reception/actions`
+
+AI agent endpoints require `AI_AGENT_USE`. Responses include the required AI review disclaimer.

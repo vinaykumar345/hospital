@@ -1,0 +1,1 @@
+export const AI_AGENT_REPOSITORY = Symbol("AI_AGENT_REPOSITORY");
