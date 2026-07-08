@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { PostgresService } from "../../common/database/postgres.service.js";
-import { DoctorDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
+import { DoctorDashboardQueryDto, NurseDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
 import { DashboardRepository } from "./dashboard.repository.js";
 
 @Injectable()
@@ -71,6 +71,31 @@ export class PostgresDashboardRepository implements DashboardRepository {
       todaysAppointments: appointments.rows,
       openTaskCounts: tasks.rows,
       followUps: followUps.rows
+    };
+  }
+
+  async getNurseDashboard(query: NurseDashboardQueryDto) {
+    const tasks = await this.postgres.query(
+      `select task_type, status, count(*) as count
+       from nurse_dashboard_tasks
+       where tenant_id = $1 and ($2::uuid is null or nurse_user_id = $2::uuid)
+       group by task_type, status
+       order by task_type, status`,
+      [query.tenantId, query.nurseUserId ?? null]
+    );
+
+    const due = await this.postgres.query(
+      `select id, patient_id, nurse_user_id, task_type, label, due_at, status
+       from nurse_dashboard_tasks
+       where tenant_id = $1 and ($2::uuid is null or nurse_user_id = $2::uuid) and status = 'OPEN'
+       order by due_at asc nulls last, created_at asc
+       limit 20`,
+      [query.tenantId, query.nurseUserId ?? null]
+    );
+
+    return {
+      taskCounts: tasks.rows,
+      dueTasks: due.rows
     };
   }
 }

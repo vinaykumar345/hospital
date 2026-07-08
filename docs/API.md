@@ -109,3 +109,9 @@ Reception dashboard requires `APPOINTMENT_READ` and returns queue, walk-in, chec
 - `GET /api/v1/dashboards/doctor`
 
 Doctor dashboard requires `CLINICAL_NOTE_READ` and returns today's appointments, open task counts, and follow-up items.
+
+## Nurse Dashboard
+
+- `GET /api/v1/dashboards/nurse`
+
+Nurse dashboard requires `CLINICAL_NOTE_READ` and returns shift handover, medication, task, vital sign, and observation-log task summaries.

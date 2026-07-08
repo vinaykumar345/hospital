@@ -17,3 +17,10 @@ export class DoctorDashboardQueryDto extends ReceptionDashboardQueryDto {
   @IsUUID()
   doctorUserId!: string;
 }
+
+export class NurseDashboardQueryDto extends ReceptionDashboardQueryDto {
+  @ApiProperty({ required: false })
+  @IsOptional()
+  @IsUUID()
+  nurseUserId?: string;
+}

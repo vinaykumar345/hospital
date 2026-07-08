@@ -29,6 +29,7 @@ const requiredPaths = [
   "apps/api/migrations/0007_appointment_system.sql",
   "apps/api/migrations/0008_reception_dashboard.sql",
   "apps/api/migrations/0009_doctor_dashboard.sql",
+  "apps/api/migrations/0010_nurse_dashboard.sql",
   "apps/api/src/modules/health/health.controller.ts",
   "apps/web/src/main.tsx",
   "apps/mobile/lib/main.dart",

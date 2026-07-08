@@ -39,3 +39,7 @@ Reception teams use the dashboard to monitor walk-ins, queue status, upcoming ap
 ## Doctor Dashboard
 
 Doctors use the dashboard to review today's appointments, documentation tasks, follow-ups, and patient summary tasks.
+
+## Nurse Dashboard
+
+Nursing teams use the dashboard to manage shift handovers, medication schedules, nursing tasks, vital signs, and observation logs.

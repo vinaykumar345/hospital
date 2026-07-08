@@ -39,3 +39,7 @@ Reception users can scan queue state and upcoming appointments from a single das
 ## Doctor View
 
 Doctor users can view daily appointments, pending documentation, and follow-up tasks from their dashboard.
+
+## Nurse View
+
+Nurse users can track handover, medication, task, vital sign, and observation work queues.

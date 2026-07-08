@@ -93,6 +93,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Doctor dashboard',
                 subtitle: 'View today appointments, pending documentation, follow-ups, and patient summary tasks.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Nurse dashboard',
+                subtitle: 'Track shift handovers, medication schedules, nursing tasks, vitals, and observations.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

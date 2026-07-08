@@ -87,3 +87,9 @@ Defined in `apps/api/migrations/0008_reception_dashboard.sql`.
 Defined in `apps/api/migrations/0009_doctor_dashboard.sql`.
 
 - `doctor_dashboard_tasks` stores pending documentation, follow-up, and patient summary tasks.
+
+## Nurse Dashboard Tables
+
+Defined in `apps/api/migrations/0010_nurse_dashboard.sql`.
+
+- `nurse_dashboard_tasks` stores shift handover, medication schedule, nursing task, vital signs, and observation log tasks.
