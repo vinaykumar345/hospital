@@ -58,3 +58,26 @@ export class DoctorAgentDraftDto {
   @IsNotEmpty()
   clinicalContext!: string;
 }
+
+export class NurseAgentDraftDto {
+  @ApiProperty()
+  @IsUUID()
+  tenantId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  nurseUserId!: string;
+
+  @ApiProperty()
+  @IsUUID()
+  patientId!: string;
+
+  @ApiProperty({ enum: ["SHIFT_HANDOVER", "MEDICATION_SCHEDULE", "NURSING_TASKS", "VITAL_SIGNS_NOTE", "OBSERVATION_LOG"] })
+  @IsIn(["SHIFT_HANDOVER", "MEDICATION_SCHEDULE", "NURSING_TASKS", "VITAL_SIGNS_NOTE", "OBSERVATION_LOG"])
+  outputType!: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  nursingContext!: string;
+}

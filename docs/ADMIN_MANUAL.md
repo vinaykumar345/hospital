@@ -75,3 +75,7 @@ Reception teams can use the AI agent for appointment drafts, queue estimates, FA
 ## AI Doctor Agent
 
 Doctors can create review-gated clinical drafts. Differential diagnosis suggestions and medication interaction highlights require licensed clinician review.
+
+## AI Nurse Agent
+
+Nurses can create review-gated handover, medication schedule, task, vital sign, and observation drafts.

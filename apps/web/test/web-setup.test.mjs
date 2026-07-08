@@ -40,6 +40,8 @@ assert.match(app, /AI Reception Agent/);
 assert.match(app, /Queue estimates/);
 assert.match(app, /AI Doctor Agent/);
 assert.match(app, /Clinician review/);
+assert.match(app, /AI Nurse Agent/);
+assert.match(app, /Handover drafts/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

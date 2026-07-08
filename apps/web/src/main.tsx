@@ -408,6 +408,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="AI Nurse Agent">
+        <div className="section-title">
+          <Stethoscope aria-hidden="true" size={20} />
+          <h2>AI Nurse Agent</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Handover drafts</span>
+          </div>
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Medication schedules</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Nurse review</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

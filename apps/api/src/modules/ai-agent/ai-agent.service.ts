@@ -2,7 +2,7 @@ import { Inject, Injectable } from "@nestjs/common";
 import { AI_REVIEW_DISCLAIMER } from "@hospital/shared";
 import { AI_AGENT_REPOSITORY } from "./ai-agent.constants.js";
 import { AiAgentRepository } from "./ai-agent.repository.js";
-import { DoctorAgentDraftDto, ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
+import { DoctorAgentDraftDto, NurseAgentDraftDto, ReceptionAgentActionDto, ReceptionAgentRequestDto } from "./dto/ai-agent.dto.js";
 
 @Injectable()
 export class AiAgentService {
@@ -43,6 +43,11 @@ export class AiAgentService {
   doctorDraft(dto: DoctorAgentDraftDto) {
     const draftText = this.createDoctorDraft(dto.outputType, dto.clinicalContext);
     return this.repository.recordDoctorDraft(dto, draftText, AI_REVIEW_DISCLAIMER);
+  }
+
+  nurseDraft(dto: NurseAgentDraftDto) {
+    const draftText = `Draft for nurse review only. ${dto.outputType.replaceAll("_", " ").toLowerCase()} based on provided nursing context: ${dto.nursingContext}`;
+    return this.repository.recordNurseDraft(dto, draftText, AI_REVIEW_DISCLAIMER);
   }
 
   private createDoctorDraft(outputType: string, clinicalContext: string): string {

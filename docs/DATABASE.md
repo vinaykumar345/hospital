@@ -152,3 +152,9 @@ Defined in `apps/api/migrations/0016_ai_reception_agent.sql`.
 Defined in `apps/api/migrations/0017_ai_doctor_agent.sql`.
 
 - `doctor_agent_outputs` stores review-gated doctor assistant drafts for summaries, notes, differential suggestions, medication interaction highlights, referrals, discharge summaries, and follow-up plans.
+
+## AI Nurse Agent Tables
+
+Defined in `apps/api/migrations/0018_ai_nurse_agent.sql`.
+
+- `nurse_agent_outputs` stores review-gated nurse assistant drafts for handovers, medication schedules, tasks, vital sign notes, and observation logs.

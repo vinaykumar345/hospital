@@ -75,3 +75,7 @@ The reception assistant can help with hospital logistics such as appointments, q
 ## AI Clinical Drafts
 
 Clinician-facing AI drafts are support tools only. They must be reviewed and accepted by qualified staff before use.
+
+## AI Nursing Drafts
+
+Nurse-facing AI drafts are support tools only and must be reviewed before use.
