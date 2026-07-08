@@ -21,3 +21,10 @@ Never commit production secrets. Configure secrets through the target cloud secr
 Local observability uses Prometheus, Grafana, Loki, Promtail, and OpenTelemetry Collector through `infra/docker/docker-compose.yml`.
 
 The API should emit request IDs, metrics, logs, and traces so audit events can be correlated with application telemetry.
+
+## CI/CD
+
+GitHub Actions workflows:
+
+- `.github/workflows/ci.yml` runs workspace verification, build hooks, Dockerfile checks, and Kubernetes manifest checks.
+- `.github/workflows/release.yml` builds API and web container images from a manually supplied image tag.

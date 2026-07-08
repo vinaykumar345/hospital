@@ -107,3 +107,7 @@ Administrators with audit access can review security events, actor activity, ent
 ## Monitoring And Logging
 
 Operations teams should monitor API latency, request rate, errors, logs, and traces through Prometheus, Grafana, Loki, and OpenTelemetry.
+
+## CI/CD
+
+Engineering administrators should require successful CI checks before deployment and use protected release environments for production promotion.

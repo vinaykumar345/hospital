@@ -17,3 +17,24 @@ jobs:
           cache: npm
       - run: npm install
       - run: npm run test
+      - run: npm run build --if-present
+
+  dockerfiles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Dockerfiles exist
+        run: |
+          test -f apps/api/Dockerfile
+          test -f apps/web/Dockerfile
+
+  kubernetes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Kubernetes manifests
+        run: |
+          test -f infra/k8s/base/namespace.yaml
+          test -f infra/k8s/base/api-deployment.yaml
+          test -f infra/k8s/base/api-service.yaml
+          test -f infra/k8s/base/observability-configmap.yaml
