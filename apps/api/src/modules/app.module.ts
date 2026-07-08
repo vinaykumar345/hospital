@@ -7,6 +7,7 @@ import { HealthModule } from "./health/health.module.js";
 import { HospitalModule } from "./hospital/hospital.module.js";
 import { LaboratoryModule } from "./laboratory/laboratory.module.js";
 import { PatientModule } from "./patient/patient.module.js";
+import { PharmacyModule } from "./pharmacy/pharmacy.module.js";
 import { RbacModule } from "./rbac/rbac.module.js";
 import { StaffModule } from "./staff/staff.module.js";
 import { TenancyModule } from "./tenancy/tenancy.module.js";
@@ -23,6 +24,7 @@ import { TenancyModule } from "./tenancy/tenancy.module.js";
     HospitalModule,
     LaboratoryModule,
     PatientModule,
+    PharmacyModule,
     RbacModule,
     StaffModule,
     TenancyModule

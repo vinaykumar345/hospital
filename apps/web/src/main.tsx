@@ -282,6 +282,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Pharmacy module">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Pharmacy Module</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <Stethoscope aria-hidden="true" size={18} />
+            <span>Prescriptions</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Stock and expiry</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Interaction warnings</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

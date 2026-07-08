@@ -103,6 +103,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Laboratory module',
                 subtitle: 'Order tests, track samples, enter results, alert critical values, and request reviewed summaries.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Pharmacy module',
+                subtitle: 'Manage prescriptions, stock, expiry alerts, interaction warnings, and dispensing.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

@@ -104,3 +104,14 @@ Defined in `apps/api/migrations/0011_laboratory_module.sql`.
 - `lab_results` stores result entry and interpretation.
 - `lab_critical_alerts` stores critical value alerts.
 - `lab_result_summary_requests` stores plain-language AI summary requests with the required review disclaimer.
+
+## Pharmacy Tables
+
+Defined in `apps/api/migrations/0012_pharmacy_module.sql`.
+
+- `medicines` stores the catalog.
+- `pharmacy_stock_lots` stores inventory batches and expiry dates.
+- `prescriptions` and `prescription_items` store prescribed medicines.
+- `pharmacy_dispenses` stores dispensing events.
+- `pharmacy_interaction_warnings` stores pharmacist-reviewed drug interaction warnings.
+- `pharmacy_expiry_alerts` stores stock expiry alerts.

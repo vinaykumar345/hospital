@@ -47,3 +47,7 @@ Nursing teams use the dashboard to manage shift handovers, medication schedules,
 ## Laboratory
 
 Lab teams maintain test catalogs, create orders, track samples, enter results, and monitor critical alerts. Plain-language summaries must be reviewed before patient use.
+
+## Pharmacy
+
+Pharmacy teams maintain medicines, stock lots, expiry alerts, prescriptions, interaction warnings, and dispense events.

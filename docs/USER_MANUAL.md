@@ -47,3 +47,7 @@ Nurse users can track handover, medication, task, vital sign, and observation wo
 ## Lab Reports
 
 Authorized users can view lab orders and results. Plain-language summaries are AI-generated content and must be reviewed before use.
+
+## Prescriptions
+
+Authorized users can view prescriptions and dispensing status. Interaction warnings are support information and require professional review.

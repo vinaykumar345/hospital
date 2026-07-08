@@ -126,3 +126,16 @@ Nurse dashboard requires `CLINICAL_NOTE_READ` and returns shift handover, medica
 - `POST /api/v1/laboratory/orders/{orderId}/results`
 
 Laboratory endpoints require `LAB_ORDER_MANAGE`.
+
+## Pharmacy
+
+- `GET /api/v1/pharmacy/medicines`
+- `POST /api/v1/pharmacy/medicines`
+- `GET /api/v1/pharmacy/stock`
+- `POST /api/v1/pharmacy/stock`
+- `POST /api/v1/pharmacy/prescriptions`
+- `POST /api/v1/pharmacy/prescriptions/{prescriptionId}/items`
+- `POST /api/v1/pharmacy/dispenses`
+- `POST /api/v1/pharmacy/interaction-warnings`
+
+Pharmacy endpoints require `PHARMACY_MANAGE`.
