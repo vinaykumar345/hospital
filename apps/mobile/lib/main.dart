@@ -180,6 +180,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Subscription management',
                 subtitle: 'Manage SaaS plans, tenant subscriptions, billing intervals, and subscription status.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Audit logs',
+                subtitle: 'Review tenant-scoped security events, actor activity, and entity history.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

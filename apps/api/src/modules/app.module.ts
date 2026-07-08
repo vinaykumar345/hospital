@@ -3,6 +3,7 @@ import { ConfigModule } from "@nestjs/config";
 import { AuthModule } from "./auth/auth.module.js";
 import { AiAgentModule } from "./ai-agent/ai-agent.module.js";
 import { AppointmentModule } from "./appointment/appointment.module.js";
+import { AuditModule } from "./audit/audit.module.js";
 import { BillingModule } from "./billing/billing.module.js";
 import { DashboardModule } from "./dashboard/dashboard.module.js";
 import { HealthModule } from "./health/health.module.js";
@@ -25,6 +26,7 @@ import { WhiteLabelModule } from "./white-label/white-label.module.js";
     }),
     AiAgentModule,
     AppointmentModule,
+    AuditModule,
     AuthModule,
     BillingModule,
     DashboardModule,

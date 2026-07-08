@@ -52,6 +52,8 @@ assert.match(app, /White-Label System/);
 assert.match(app, /Theme colors/);
 assert.match(app, /Subscription Management/);
 assert.match(app, /SaaS plans/);
+assert.match(app, /Audit Logs/);
+assert.match(app, /Security events/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

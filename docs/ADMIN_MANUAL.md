@@ -99,3 +99,7 @@ Hospital Admins can configure logo assets, colors, mobile splash assets, email t
 ## Subscription Management
 
 Super Admins manage SaaS plans, tenant subscription status, billing intervals, and provider billing references.
+
+## Audit Logs
+
+Administrators with audit access can review security events, actor activity, entity history, IP addresses, and request metadata.

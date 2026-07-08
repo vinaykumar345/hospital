@@ -99,3 +99,7 @@ Hospitals may customize logos, colors, domains, email templates, and mobile bran
 ## Subscription Status
 
 Subscription status is managed by platform administrators and may affect access to hospital SaaS features.
+
+## Auditability
+
+Security-sensitive activity may be logged for privacy, compliance, and operational review.

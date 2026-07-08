@@ -193,3 +193,9 @@ Defined in `apps/api/migrations/0023_subscription_management.sql`.
 - `subscription_plans` stores SaaS plan definitions.
 - `tenant_subscriptions` stores each tenant's active subscription.
 - `subscription_invoices` stores SaaS subscription invoice metadata.
+
+## Audit Log Fields
+
+Defined in `apps/api/migrations/0024_audit_logs.sql`.
+
+- `audit_events` includes request, actor, entity, IP, user agent, event type, metadata, and timestamp fields.

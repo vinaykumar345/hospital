@@ -226,3 +226,9 @@ White-label endpoints require `HOSPITAL_PROFILE_MANAGE`.
 - `PATCH /api/v1/subscriptions/{subscriptionId}/status`
 
 Subscription endpoints require `TENANT_MANAGE`.
+
+## Audit Logs
+
+- `GET /api/v1/audit/events`
+
+Audit log access requires `AUDIT_READ`.

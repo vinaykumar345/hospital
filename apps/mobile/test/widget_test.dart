@@ -34,6 +34,7 @@ void main() {
     expect(find.text('Admin analytics'), findsOneWidget);
     expect(find.text('White-label system'), findsOneWidget);
     expect(find.text('Subscription management'), findsOneWidget);
+    expect(find.text('Audit logs'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

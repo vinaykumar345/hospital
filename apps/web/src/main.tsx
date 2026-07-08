@@ -534,6 +534,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Audit logs">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Audit Logs</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Security events</span>
+          </div>
+          <div>
+            <UsersRound aria-hidden="true" size={18} />
+            <span>Actor tracking</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Entity history</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );
