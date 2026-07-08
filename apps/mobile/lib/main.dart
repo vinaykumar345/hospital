@@ -58,6 +58,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Hospital tenant',
                 subtitle: 'Resolve hospital domain, branding, and tenant-isolated records.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Role-based access',
+                subtitle: 'Show menus and workflows only when the signed-in role is permitted.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

@@ -11,3 +11,7 @@ Users can sign in with email/password or mobile OTP when enabled by the hospital
 ## Hospital Selection
 
 Patients and staff access the correct hospital workspace through the hospital domain or assigned tenant context. Branding may vary by hospital.
+
+## Role-Based Menus
+
+Menus and actions appear according to the signed-in user's role and permissions.

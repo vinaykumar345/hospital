@@ -10,6 +10,8 @@ assert.match(app, /Email Login/);
 assert.match(app, /Mobile OTP/);
 assert.match(app, /Hospital Tenant Setup/);
 assert.match(app, /Domain mapping/);
+assert.match(app, /Role-Based Access/);
+assert.match(app, /PERMISSION_NAMES/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

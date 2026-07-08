@@ -37,3 +37,10 @@ Defined in `apps/api/migrations/0002_multi_tenant_hospital_setup.sql`.
 - `hospital_profiles` stores legal and contact profile details for each hospital tenant.
 
 Tenant-owned authentication tables have row-level security enabled and use `current_setting('app.tenant_id', true)` for isolation.
+
+## RBAC Tables
+
+Defined in `apps/api/migrations/0003_role_based_access_control.sql`.
+
+- `permissions` stores canonical platform permissions.
+- `role_permissions` maps roles to permissions.

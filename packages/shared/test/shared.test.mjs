@@ -6,5 +6,7 @@ const source = readFileSync(new URL("../src/index.ts", import.meta.url), "utf8")
 assert.match(source, /AI-generated content\. Please review before use\./);
 assert.match(source, /SUPER_ADMIN/);
 assert.match(source, /INSURANCE_COORDINATOR/);
+assert.match(source, /PERMISSION_NAMES/);
+assert.match(source, /TENANT_MANAGE/);
 
 console.log("shared contract smoke tests passed");

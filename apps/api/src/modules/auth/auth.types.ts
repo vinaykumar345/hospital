@@ -6,6 +6,7 @@ export interface AuthenticatedUser {
   email: string | null;
   mobile: string | null;
   roles: string[];
+  permissions: string[];
   mfaEnabled: boolean;
 }
 

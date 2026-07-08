@@ -77,6 +77,7 @@ export class AuthService {
         email: null,
         mobile: null,
         roles: [],
+        permissions: [],
         mfaEnabled: false
       }),
       refreshToken: newRefreshToken

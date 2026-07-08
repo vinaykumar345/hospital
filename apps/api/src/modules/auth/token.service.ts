@@ -8,6 +8,7 @@ interface JwtPayload {
   sub: string;
   tenantId: string | null;
   roles: string[];
+  permissions: string[];
   typ: "access" | "mfa_challenge";
   exp: number;
   iat: number;
@@ -22,6 +23,7 @@ export class TokenService {
       sub: user.id,
       tenantId: user.tenantId,
       roles: user.roles,
+      permissions: user.permissions,
       typ: "access",
       iat: this.now(),
       exp: this.now() + ACCESS_TOKEN_TTL_SECONDS
@@ -33,6 +35,7 @@ export class TokenService {
       sub: user.id,
       tenantId: user.tenantId,
       roles: user.roles,
+      permissions: user.permissions,
       typ: "mfa_challenge",
       iat: this.now(),
       exp: this.now() + 5 * 60

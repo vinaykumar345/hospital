@@ -9,6 +9,7 @@ void main() {
     expect(find.text('Email and password'), findsOneWidget);
     expect(find.text('Mobile OTP'), findsOneWidget);
     expect(find.text('Hospital tenant'), findsOneWidget);
+    expect(find.text('Role-based access'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

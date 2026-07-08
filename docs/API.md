@@ -39,3 +39,11 @@ Authentication responses include short-lived access tokens and rotating refresh 
 - `PATCH /api/v1/tenants/{tenantId}/branding`
 
 Tenant APIs manage hospital SaaS tenants, domain mapping, and white-label branding foundations.
+
+## RBAC
+
+- `GET /api/v1/rbac/role-permissions`
+- `POST /api/v1/rbac/role-permissions`
+- `DELETE /api/v1/rbac/role-permissions`
+
+RBAC endpoints require `ROLE_MANAGE`.

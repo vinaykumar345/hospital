@@ -11,3 +11,7 @@ Administrators should enforce strong passwords, enable MFA for staff accounts, r
 ## Tenant Setup
 
 Super Admins create a tenant for each hospital organization, map verified domains, configure branding, and confirm the hospital profile before users are invited.
+
+## Role Management
+
+Only users with `ROLE_MANAGE` can grant or revoke permissions. Review assignments after staff transfers, department changes, and offboarding.

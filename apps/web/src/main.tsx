@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Building2, Globe2, KeyRound, MessageSquareText, Palette, ShieldCheck } from "lucide-react";
-import { AI_REVIEW_DISCLAIMER, ROLE_NAMES } from "@hospital/shared";
+import { AI_REVIEW_DISCLAIMER, PERMISSION_NAMES, ROLE_NAMES } from "@hospital/shared";
 import "./styles.css";
 
 function App() {
@@ -86,6 +86,18 @@ function App() {
             <ShieldCheck aria-hidden="true" size={18} />
             <span>Tenant-isolated records</span>
           </div>
+        </div>
+      </section>
+
+      <section className="tenant-band" aria-label="Role permissions">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Role-Based Access</h2>
+        </div>
+        <div className="permission-list">
+          {PERMISSION_NAMES.slice(0, 8).map((permission) => (
+            <span key={permission}>{permission.replaceAll("_", " ")}</span>
+          ))}
         </div>
       </section>
 

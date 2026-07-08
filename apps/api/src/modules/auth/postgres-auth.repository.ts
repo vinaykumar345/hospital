@@ -14,6 +14,7 @@ interface CredentialRow {
   failed_login_attempts: number;
   locked_until: Date | null;
   roles: string[];
+  permissions: string[];
 }
 
 interface SessionRow {
@@ -32,7 +33,7 @@ export class PostgresAuthRepository implements AuthRepository {
       `insert into user_credentials (tenant_id, email, email_lower, mobile_e164, password_hash)
        values ($1, $2, lower($2), $3, $4)
        returning id, tenant_id, email, mobile_e164, password_hash, status, mfa_enabled,
-         failed_login_attempts, locked_until, array[]::text[] as roles`,
+         failed_login_attempts, locked_until, array[]::text[] as roles, array[]::text[] as permissions`,
       [input.tenantId, input.email, input.mobile, input.passwordHash]
     );
 
@@ -42,10 +43,14 @@ export class PostgresAuthRepository implements AuthRepository {
   async findCredentialByEmail(email: string, tenantId: string | null): Promise<CredentialRecord | null> {
     const result = await this.postgres.query<CredentialRow>(
       `select uc.id, uc.tenant_id, uc.email, uc.mobile_e164, uc.password_hash, uc.status, uc.mfa_enabled,
-        uc.failed_login_attempts, uc.locked_until, coalesce(array_agg(r.name) filter (where r.name is not null), array[]::text[]) as roles
+        uc.failed_login_attempts, uc.locked_until,
+        coalesce(array_agg(distinct r.name) filter (where r.name is not null), array[]::text[]) as roles,
+        coalesce(array_agg(distinct p.name) filter (where p.name is not null), array[]::text[]) as permissions
        from user_credentials uc
        left join user_role_assignments ura on ura.user_id = uc.id
        left join roles r on r.id = ura.role_id
+       left join role_permissions rp on rp.role_id = r.id
+       left join permissions p on p.id = rp.permission_id
        where uc.email_lower = lower($1) and uc.tenant_id is not distinct from $2
        group by uc.id`,
       [email, tenantId]
@@ -57,10 +62,14 @@ export class PostgresAuthRepository implements AuthRepository {
   async findCredentialByMobile(mobile: string, tenantId: string | null): Promise<CredentialRecord | null> {
     const result = await this.postgres.query<CredentialRow>(
       `select uc.id, uc.tenant_id, uc.email, uc.mobile_e164, uc.password_hash, uc.status, uc.mfa_enabled,
-        uc.failed_login_attempts, uc.locked_until, coalesce(array_agg(r.name) filter (where r.name is not null), array[]::text[]) as roles
+        uc.failed_login_attempts, uc.locked_until,
+        coalesce(array_agg(distinct r.name) filter (where r.name is not null), array[]::text[]) as roles,
+        coalesce(array_agg(distinct p.name) filter (where p.name is not null), array[]::text[]) as permissions
        from user_credentials uc
        left join user_role_assignments ura on ura.user_id = uc.id
        left join roles r on r.id = ura.role_id
+       left join role_permissions rp on rp.role_id = r.id
+       left join permissions p on p.id = rp.permission_id
        where uc.mobile_e164 = $1 and uc.tenant_id is not distinct from $2
        group by uc.id`,
       [mobile, tenantId]
@@ -205,6 +214,7 @@ export class PostgresAuthRepository implements AuthRepository {
       failedLoginAttempts: row.failed_login_attempts,
       lockedUntil: row.locked_until,
       roles: row.roles,
+      permissions: row.permissions,
       mfaEnabled: row.mfa_enabled
     };
   }
