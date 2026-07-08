@@ -88,6 +88,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Reception dashboard',
                 subtitle: 'Track walk-ins, queue status, check-ins, cancellations, and upcoming appointments.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Doctor dashboard',
+                subtitle: 'View today appointments, pending documentation, follow-ups, and patient summary tasks.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

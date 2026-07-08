@@ -35,3 +35,7 @@ Admins and reception teams configure booking operations around doctor schedules,
 ## Reception Dashboard
 
 Reception teams use the dashboard to monitor walk-ins, queue status, upcoming appointments, check-ins, and cancellations.
+
+## Doctor Dashboard
+
+Doctors use the dashboard to review today's appointments, documentation tasks, follow-ups, and patient summary tasks.

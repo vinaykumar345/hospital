@@ -1,7 +1,7 @@
 import { Inject, Injectable } from "@nestjs/common";
 import { DASHBOARD_REPOSITORY } from "./dashboard.constants.js";
 import { DashboardRepository } from "./dashboard.repository.js";
-import { ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
+import { DoctorDashboardQueryDto, ReceptionDashboardQueryDto } from "./dto/dashboard.dto.js";
 
 @Injectable()
 export class DashboardService {
@@ -9,5 +9,9 @@ export class DashboardService {
 
   getReceptionDashboard(query: ReceptionDashboardQueryDto) {
     return this.repository.getReceptionDashboard(query);
+  }
+
+  getDoctorDashboard(query: DoctorDashboardQueryDto) {
+    return this.repository.getDoctorDashboard(query);
   }
 }

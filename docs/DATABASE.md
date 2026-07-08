@@ -81,3 +81,9 @@ Defined in `apps/api/migrations/0007_appointment_system.sql`.
 Defined in `apps/api/migrations/0008_reception_dashboard.sql`.
 
 - `reception_dashboard_queue_summary` summarizes walk-ins and queue states by tenant and service date.
+
+## Doctor Dashboard Tables
+
+Defined in `apps/api/migrations/0009_doctor_dashboard.sql`.
+
+- `doctor_dashboard_tasks` stores pending documentation, follow-up, and patient summary tasks.

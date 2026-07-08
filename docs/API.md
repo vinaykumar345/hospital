@@ -103,3 +103,9 @@ Appointment read endpoints require `APPOINTMENT_READ`; write and queue endpoints
 - `GET /api/v1/dashboards/reception`
 
 Reception dashboard requires `APPOINTMENT_READ` and returns queue, walk-in, checked-in, cancellation, and upcoming appointment metrics.
+
+## Doctor Dashboard
+
+- `GET /api/v1/dashboards/doctor`
+
+Doctor dashboard requires `CLINICAL_NOTE_READ` and returns today's appointments, open task counts, and follow-up items.

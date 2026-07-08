@@ -8,9 +8,11 @@ const migration = readFileSync(new URL("../migrations/0008_reception_dashboard.s
 assert.equal(existsSync(new URL("../src/modules/dashboard/dashboard.module.ts", import.meta.url)), true);
 assert.match(controller, /dashboards/);
 assert.match(controller, /reception/);
+assert.match(controller, /doctor/);
 assert.match(controller, /@RequirePermissions\("APPOINTMENT_READ"\)/);
 assert.match(repository, /walk_ins/);
 assert.match(repository, /upcomingAppointments/);
+assert.match(repository, /todaysAppointments/);
 assert.match(migration, /reception_dashboard_queue_summary/);
 
 console.log("reception dashboard smoke tests passed");

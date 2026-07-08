@@ -11,3 +11,9 @@ export class ReceptionDashboardQueryDto {
   @IsDateString()
   date?: string;
 }
+
+export class DoctorDashboardQueryDto extends ReceptionDashboardQueryDto {
+  @ApiProperty()
+  @IsUUID()
+  doctorUserId!: string;
+}
