@@ -73,6 +73,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Staff management',
                 subtitle: 'Manage staff profiles, status, departments, branches, and doctor schedules.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Patient management',
+                subtitle: 'Register patients and manage history, allergies, medications, insurance, consents, and visits.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

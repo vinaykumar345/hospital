@@ -3,6 +3,7 @@ import { ConfigModule } from "@nestjs/config";
 import { AuthModule } from "./auth/auth.module.js";
 import { HealthModule } from "./health/health.module.js";
 import { HospitalModule } from "./hospital/hospital.module.js";
+import { PatientModule } from "./patient/patient.module.js";
 import { RbacModule } from "./rbac/rbac.module.js";
 import { StaffModule } from "./staff/staff.module.js";
 import { TenancyModule } from "./tenancy/tenancy.module.js";
@@ -15,6 +16,7 @@ import { TenancyModule } from "./tenancy/tenancy.module.js";
     AuthModule,
     HealthModule,
     HospitalModule,
+    PatientModule,
     RbacModule,
     StaffModule,
     TenancyModule

@@ -73,3 +73,17 @@ Hospital management endpoints require `HOSPITAL_PROFILE_MANAGE`.
 - `POST /api/v1/staff/doctor-schedules`
 
 Staff management endpoints require `USER_MANAGE`.
+
+## Patient Management
+
+- `GET /api/v1/patients`
+- `POST /api/v1/patients`
+- `GET /api/v1/patients/{patientId}`
+- `POST /api/v1/patients/{patientId}/allergies`
+- `POST /api/v1/patients/{patientId}/medications`
+- `POST /api/v1/patients/{patientId}/emergency-contacts`
+- `POST /api/v1/patients/{patientId}/insurance`
+- `POST /api/v1/patients/{patientId}/consents`
+- `POST /api/v1/patients/{patientId}/visits`
+
+Patient read endpoints require `PATIENT_READ`; write endpoints require `PATIENT_WRITE`.

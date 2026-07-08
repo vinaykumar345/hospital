@@ -60,3 +60,10 @@ Defined in `apps/api/migrations/0004_hospital_management.sql`.
 Defined in `apps/api/migrations/0005_staff_management.sql`.
 
 - `staff_profiles` stores employment profile, role, status, department, branch, and license metadata linked to authenticated users.
+
+## Patient Management Tables
+
+Defined in `apps/api/migrations/0006_patient_management.sql`.
+
+- `patients` stores digital registration and patient profile fields.
+- `patient_allergies`, `patient_medications`, `patient_emergency_contacts`, `patient_insurance_details`, `patient_consents`, and `patient_visits` store patient subrecords.

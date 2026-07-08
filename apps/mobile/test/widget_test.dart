@@ -12,6 +12,7 @@ void main() {
     expect(find.text('Role-based access'), findsOneWidget);
     expect(find.text('Hospital management'), findsOneWidget);
     expect(find.text('Staff management'), findsOneWidget);
+    expect(find.text('Patient management'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

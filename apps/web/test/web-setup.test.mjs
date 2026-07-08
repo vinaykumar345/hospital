@@ -16,6 +16,8 @@ assert.match(app, /Hospital Management/);
 assert.match(app, /Departments/);
 assert.match(app, /Staff Management/);
 assert.match(app, /Doctor schedules/);
+assert.match(app, /Patient Management/);
+assert.match(app, /Medical history/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

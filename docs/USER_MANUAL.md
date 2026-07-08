@@ -23,3 +23,7 @@ Authorized staff can view the configured departments, locations, rooms, and bed 
 ## Staff Profiles
 
 Authorized administrators manage staff profile details and schedules. Staff users see capabilities based on assigned role and permissions.
+
+## Patient Records
+
+Patient records include registration details, allergies, current medications, emergency contacts, insurance information, consent records, and visit history.

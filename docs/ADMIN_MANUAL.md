@@ -23,3 +23,7 @@ Hospital Admins configure profile details, departments, branches, rooms, beds, a
 ## Staff Management
 
 Hospital Admins create staff profiles after user credentials exist, assign departments and branches, manage employment status, and maintain doctor schedules.
+
+## Patient Management
+
+Authorized staff can register patients and maintain subrecords for allergies, medications, contacts, insurance, consents, and visits. Access must follow hospital privacy policy.

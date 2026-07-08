@@ -11,6 +11,7 @@ import {
   Palette,
   ShieldCheck,
   Stethoscope,
+  UserRoundPlus,
   UsersRound
 } from "lucide-react";
 import { AI_REVIEW_DISCLAIMER, PERMISSION_NAMES, ROLE_NAMES } from "@hospital/shared";
@@ -151,6 +152,27 @@ function App() {
           <div>
             <ShieldCheck aria-hidden="true" size={18} />
             <span>Employment status</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="tenant-band" aria-label="Patient management">
+        <div className="section-title">
+          <UserRoundPlus aria-hidden="true" size={20} />
+          <h2>Patient Management</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <UserRoundPlus aria-hidden="true" size={18} />
+            <span>Registration</span>
+          </div>
+          <div>
+            <Stethoscope aria-hidden="true" size={18} />
+            <span>Medical history</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Consent records</span>
           </div>
         </div>
       </section>
