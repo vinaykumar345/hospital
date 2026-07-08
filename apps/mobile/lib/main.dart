@@ -113,6 +113,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Billing module',
                 subtitle: 'Generate invoices, apply discounts and GST, and record payments.',
               ),
+              SizedBox(height: 12),
+              AuthMethodCard(
+                title: 'Insurance module',
+                subtitle: 'Verify policies, prepare claims, upload documents, and track claim status.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

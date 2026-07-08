@@ -20,6 +20,7 @@ void main() {
     expect(find.text('Laboratory module'), findsOneWidget);
     expect(find.text('Pharmacy module'), findsOneWidget);
     expect(find.text('Billing module'), findsOneWidget);
+    expect(find.text('Insurance module'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

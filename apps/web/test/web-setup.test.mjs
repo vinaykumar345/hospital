@@ -32,6 +32,8 @@ assert.match(app, /Pharmacy Module/);
 assert.match(app, /Interaction warnings/);
 assert.match(app, /Billing Module/);
 assert.match(app, /GST and discounts/);
+assert.match(app, /Insurance Module/);
+assert.match(app, /Claim preparation/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

@@ -55,3 +55,7 @@ Pharmacy teams maintain medicines, stock lots, expiry alerts, prescriptions, int
 ## Billing
 
 Billing teams generate invoices, add service lines, apply GST and discounts, and record payments without storing payment card secrets.
+
+## Insurance
+
+Insurance coordinators verify policies, prepare claims, attach secure document metadata, and track claim status.

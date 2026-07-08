@@ -55,3 +55,7 @@ Authorized users can view prescriptions and dispensing status. Interaction warni
 ## Invoices
 
 Authorized users can view invoices, line items, discounts, GST, and payment status.
+
+## Insurance Claims
+
+Authorized users can view insurance verification and claim status where the hospital enables insurance workflows.

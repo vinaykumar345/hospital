@@ -123,3 +123,11 @@ Defined in `apps/api/migrations/0013_billing_module.sql`.
 - `invoices` stores invoice totals, GST, discounts, status, and paid amount.
 - `invoice_lines` stores consultation, procedure, lab, pharmacy, and package line items.
 - `invoice_payments` stores cash, card, UPI, bank transfer, and payment gateway payments.
+
+## Insurance Tables
+
+Defined in `apps/api/migrations/0014_insurance_module.sql`.
+
+- `insurance_policies` stores insurance verification information.
+- `insurance_claims` stores claim preparation and status tracking.
+- `insurance_claim_documents` stores uploaded document metadata and S3 keys.

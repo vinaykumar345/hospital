@@ -148,3 +148,15 @@ Pharmacy endpoints require `PHARMACY_MANAGE`.
 - `POST /api/v1/billing/invoices/{invoiceId}/payments`
 
 Billing endpoints require `BILLING_MANAGE`.
+
+## Insurance
+
+- `GET /api/v1/insurance/policies`
+- `POST /api/v1/insurance/policies`
+- `PATCH /api/v1/insurance/policies/{policyId}/verification`
+- `GET /api/v1/insurance/claims`
+- `POST /api/v1/insurance/claims`
+- `POST /api/v1/insurance/claims/{claimId}/documents`
+- `PATCH /api/v1/insurance/claims/{claimId}/status`
+
+Insurance endpoints require `INSURANCE_MANAGE`.

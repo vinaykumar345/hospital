@@ -324,6 +324,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Insurance module">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Insurance Module</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Verification</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Claim preparation</span>
+          </div>
+          <div>
+            <DoorOpen aria-hidden="true" size={18} />
+            <span>Document uploads</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

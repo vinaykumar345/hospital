@@ -6,6 +6,7 @@ import { BillingModule } from "./billing/billing.module.js";
 import { DashboardModule } from "./dashboard/dashboard.module.js";
 import { HealthModule } from "./health/health.module.js";
 import { HospitalModule } from "./hospital/hospital.module.js";
+import { InsuranceModule } from "./insurance/insurance.module.js";
 import { LaboratoryModule } from "./laboratory/laboratory.module.js";
 import { PatientModule } from "./patient/patient.module.js";
 import { PharmacyModule } from "./pharmacy/pharmacy.module.js";
@@ -24,6 +25,7 @@ import { TenancyModule } from "./tenancy/tenancy.module.js";
     DashboardModule,
     HealthModule,
     HospitalModule,
+    InsuranceModule,
     LaboratoryModule,
     PatientModule,
     PharmacyModule,

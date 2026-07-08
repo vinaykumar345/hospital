@@ -40,6 +40,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 12. Laboratory module - complete
 13. Pharmacy module - complete
 14. Billing module - complete
+15. Insurance module - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 
