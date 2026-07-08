@@ -59,3 +59,7 @@ Authorized users can view invoices, line items, discounts, GST, and payment stat
 ## Insurance Claims
 
 Authorized users can view insurance verification and claim status where the hospital enables insurance workflows.
+
+## Patient Mobile App
+
+Patients can use the mobile app to book appointments, view prescriptions, view lab reports, download invoices, receive medication and follow-up reminders, chat with the hospital AI assistant, and manage family members.

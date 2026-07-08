@@ -59,3 +59,7 @@ Billing teams generate invoices, add service lines, apply GST and discounts, and
 ## Insurance
 
 Insurance coordinators verify policies, prepare claims, attach secure document metadata, and track claim status.
+
+## Patient Mobile App
+
+Administrators should configure tenant branding, patient access policies, and notification settings before inviting patients to use the mobile app.

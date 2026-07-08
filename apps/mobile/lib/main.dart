@@ -35,88 +35,105 @@ class SetupHomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Mobile foundation ready',
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
-              ),
+              Text('Patient mobile app', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w700)),
               SizedBox(height: 12),
               Text(
-                'Patient booking, records, reports, reminders, family management, and AI assistant flows will be added in module order.',
+                'Book appointments, view prescriptions, lab reports, invoices, reminders, family members, and the hospital AI assistant.',
               ),
               SizedBox(height: 24),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Email and password',
                 subtitle: 'Secure login with refresh sessions and MFA support.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Mobile OTP',
                 subtitle: 'Request and verify one-time codes for patient access.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Hospital tenant',
                 subtitle: 'Resolve hospital domain, branding, and tenant-isolated records.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Role-based access',
                 subtitle: 'Show menus and workflows only when the signed-in role is permitted.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Hospital management',
                 subtitle: 'Manage departments, branches, rooms, beds, and schedules.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Staff management',
                 subtitle: 'Manage staff profiles, status, departments, branches, and doctor schedules.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Patient management',
                 subtitle: 'Register patients and manage history, allergies, medications, insurance, consents, and visits.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Appointment system',
                 subtitle: 'Book visits, manage walk-ins, queues, reminders, and teleconsultations.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Reception dashboard',
                 subtitle: 'Track walk-ins, queue status, check-ins, cancellations, and upcoming appointments.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Doctor dashboard',
                 subtitle: 'View today appointments, pending documentation, follow-ups, and patient summary tasks.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Nurse dashboard',
                 subtitle: 'Track shift handovers, medication schedules, nursing tasks, vitals, and observations.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Laboratory module',
                 subtitle: 'Order tests, track samples, enter results, alert critical values, and request reviewed summaries.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Pharmacy module',
                 subtitle: 'Manage prescriptions, stock, expiry alerts, interaction warnings, and dispensing.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Billing module',
                 subtitle: 'Generate invoices, apply discounts and GST, and record payments.',
               ),
               SizedBox(height: 12),
-              AuthMethodCard(
+              PatientFeatureCard(
                 title: 'Insurance module',
                 subtitle: 'Verify policies, prepare claims, upload documents, and track claim status.',
+              ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'My care',
+                subtitle: 'View upcoming appointments, prescriptions, lab reports, invoices, and follow-up reminders.',
+              ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Medication reminders',
+                subtitle: 'Track medicine schedules and refill prompts for the patient and family members.',
+              ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Family members',
+                subtitle: 'Manage dependent profiles and switch records with permission-aware access.',
+              ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Hospital AI assistant',
+                subtitle: 'Ask hospital workflow questions with reviewed AI-generated responses.',
               ),
               Spacer(),
               Text(aiReviewDisclaimer),
@@ -128,8 +145,8 @@ class SetupHomeScreen extends StatelessWidget {
   }
 }
 
-class AuthMethodCard extends StatelessWidget {
-  const AuthMethodCard({
+class PatientFeatureCard extends StatelessWidget {
+  const PatientFeatureCard({
     required this.title,
     required this.subtitle,
     super.key,

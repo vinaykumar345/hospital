@@ -5,7 +5,7 @@ void main() {
   testWidgets('renders setup screen and AI disclaimer', (tester) async {
     await tester.pumpWidget(const AiHospitalAssistantApp());
 
-    expect(find.text('Mobile foundation ready'), findsOneWidget);
+    expect(find.text('Patient mobile app'), findsOneWidget);
     expect(find.text('Email and password'), findsOneWidget);
     expect(find.text('Mobile OTP'), findsOneWidget);
     expect(find.text('Hospital tenant'), findsOneWidget);
@@ -21,6 +21,10 @@ void main() {
     expect(find.text('Pharmacy module'), findsOneWidget);
     expect(find.text('Billing module'), findsOneWidget);
     expect(find.text('Insurance module'), findsOneWidget);
+    expect(find.text('My care'), findsOneWidget);
+    expect(find.text('Medication reminders'), findsOneWidget);
+    expect(find.text('Family members'), findsOneWidget);
+    expect(find.text('Hospital AI assistant'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }
