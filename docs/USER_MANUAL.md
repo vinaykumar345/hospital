@@ -63,3 +63,7 @@ Authorized users can view insurance verification and claim status where the hosp
 ## Patient Mobile App
 
 Patients can use the mobile app to book appointments, view prescriptions, view lab reports, download invoices, receive medication and follow-up reminders, chat with the hospital AI assistant, and manage family members.
+
+## Notifications
+
+Users may receive email, SMS, push, or WhatsApp notifications according to hospital configuration and channel preferences.

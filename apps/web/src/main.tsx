@@ -345,6 +345,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Notification system">
+        <div className="section-title">
+          <MessageSquareText aria-hidden="true" size={20} />
+          <h2>Notification System</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Email and SMS</span>
+          </div>
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>Push notifications</span>
+          </div>
+          <div>
+            <Palette aria-hidden="true" size={18} />
+            <span>Templates</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

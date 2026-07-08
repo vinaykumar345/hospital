@@ -25,6 +25,7 @@ void main() {
     expect(find.text('Medication reminders'), findsOneWidget);
     expect(find.text('Family members'), findsOneWidget);
     expect(find.text('Hospital AI assistant'), findsOneWidget);
+    expect(find.text('Notifications'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

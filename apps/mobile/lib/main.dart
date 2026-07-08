@@ -135,6 +135,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Hospital AI assistant',
                 subtitle: 'Ask hospital workflow questions with reviewed AI-generated responses.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Notifications',
+                subtitle: 'Receive email, SMS, push, and WhatsApp reminders according to preferences.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

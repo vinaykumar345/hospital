@@ -131,3 +131,11 @@ Defined in `apps/api/migrations/0014_insurance_module.sql`.
 - `insurance_policies` stores insurance verification information.
 - `insurance_claims` stores claim preparation and status tracking.
 - `insurance_claim_documents` stores uploaded document metadata and S3 keys.
+
+## Notification Tables
+
+Defined in `apps/api/migrations/0015_notification_system.sql`.
+
+- `notification_templates` stores tenant-specific email, SMS, push, and WhatsApp templates.
+- `notification_deliveries` stores provider-neutral delivery queue records.
+- `notification_preferences` stores user channel preferences.

@@ -160,3 +160,13 @@ Billing endpoints require `BILLING_MANAGE`.
 - `PATCH /api/v1/insurance/claims/{claimId}/status`
 
 Insurance endpoints require `INSURANCE_MANAGE`.
+
+## Notifications
+
+- `GET /api/v1/notifications/templates`
+- `POST /api/v1/notifications/templates`
+- `GET /api/v1/notifications/deliveries`
+- `POST /api/v1/notifications/deliveries`
+- `POST /api/v1/notifications/preferences`
+
+Notification administration requires `HOSPITAL_PROFILE_MANAGE`.

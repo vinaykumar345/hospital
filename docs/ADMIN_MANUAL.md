@@ -63,3 +63,7 @@ Insurance coordinators verify policies, prepare claims, attach secure document m
 ## Patient Mobile App
 
 Administrators should configure tenant branding, patient access policies, and notification settings before inviting patients to use the mobile app.
+
+## Notifications
+
+Administrators configure channel templates and user preferences. Provider credentials must be managed through deployment secrets.
