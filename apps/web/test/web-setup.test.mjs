@@ -50,6 +50,8 @@ assert.match(app, /Admin Analytics/);
 assert.match(app, /Daily revenue/);
 assert.match(app, /White-Label System/);
 assert.match(app, /Theme colors/);
+assert.match(app, /Subscription Management/);
+assert.match(app, /SaaS plans/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

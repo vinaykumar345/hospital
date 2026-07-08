@@ -33,6 +33,7 @@ void main() {
     expect(find.text('AI Voice Follow-Up Agent'), findsOneWidget);
     expect(find.text('Admin analytics'), findsOneWidget);
     expect(find.text('White-label system'), findsOneWidget);
+    expect(find.text('Subscription management'), findsOneWidget);
     expect(find.text(aiReviewDisclaimer), findsOneWidget);
   });
 }

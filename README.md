@@ -50,6 +50,7 @@ Copy `.env.example` to `.env` and configure secrets before running services.
 22. AI Voice Calling Patient Follow-up Agent - complete
 23. Admin analytics dashboard - complete
 24. White-label system - complete
+25. Subscription management - complete
 
 The build proceeds in the requested module order. Each module must pass verification, documentation, and security review before the next module begins.
 

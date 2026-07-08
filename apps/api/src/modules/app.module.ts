@@ -14,6 +14,7 @@ import { PatientModule } from "./patient/patient.module.js";
 import { PharmacyModule } from "./pharmacy/pharmacy.module.js";
 import { RbacModule } from "./rbac/rbac.module.js";
 import { StaffModule } from "./staff/staff.module.js";
+import { SubscriptionModule } from "./subscription/subscription.module.js";
 import { TenancyModule } from "./tenancy/tenancy.module.js";
 import { WhiteLabelModule } from "./white-label/white-label.module.js";
 
@@ -36,6 +37,7 @@ import { WhiteLabelModule } from "./white-label/white-label.module.js";
     PharmacyModule,
     RbacModule,
     StaffModule,
+    SubscriptionModule,
     TenancyModule,
     WhiteLabelModule
   ]

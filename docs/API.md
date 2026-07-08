@@ -217,3 +217,12 @@ Admin analytics requires `AUDIT_READ` and returns revenue, OPD/IPD, bed occupanc
 - `POST /api/v1/white-label/email-templates`
 
 White-label endpoints require `HOSPITAL_PROFILE_MANAGE`.
+
+## Subscription Management
+
+- `GET /api/v1/subscriptions/plans`
+- `POST /api/v1/subscriptions/plans`
+- `POST /api/v1/subscriptions/tenant`
+- `PATCH /api/v1/subscriptions/{subscriptionId}/status`
+
+Subscription endpoints require `TENANT_MANAGE`.

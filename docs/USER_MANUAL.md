@@ -95,3 +95,7 @@ Administrative insights are for hospital operations teams and may include AI-gen
 ## Branded Experience
 
 Hospitals may customize logos, colors, domains, email templates, and mobile branding.
+
+## Subscription Status
+
+Subscription status is managed by platform administrators and may affect access to hospital SaaS features.

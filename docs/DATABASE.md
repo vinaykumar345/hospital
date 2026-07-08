@@ -185,3 +185,11 @@ Defined in `apps/api/migrations/0022_white_label_system.sql`.
 - `white_label_theme_extensions` stores accent color and custom CSS metadata.
 - `white_label_assets` stores logo, favicon, mobile splash, and email header asset keys.
 - `white_label_email_templates` stores tenant email template overrides.
+
+## Subscription Tables
+
+Defined in `apps/api/migrations/0023_subscription_management.sql`.
+
+- `subscription_plans` stores SaaS plan definitions.
+- `tenant_subscriptions` stores each tenant's active subscription.
+- `subscription_invoices` stores SaaS subscription invoice metadata.

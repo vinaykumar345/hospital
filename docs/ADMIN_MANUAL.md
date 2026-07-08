@@ -95,3 +95,7 @@ Hospital Admins can review daily revenue, OPD/IPD statistics, bed occupancy, app
 ## White Label
 
 Hospital Admins can configure logo assets, colors, mobile splash assets, email templates, and domain branding.
+
+## Subscription Management
+
+Super Admins manage SaaS plans, tenant subscription status, billing intervals, and provider billing references.

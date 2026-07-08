@@ -513,6 +513,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="Subscription management">
+        <div className="section-title">
+          <ShieldCheck aria-hidden="true" size={20} />
+          <h2>Subscription Management</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <ShieldCheck aria-hidden="true" size={18} />
+            <span>SaaS plans</span>
+          </div>
+          <div>
+            <CalendarClock aria-hidden="true" size={18} />
+            <span>Billing intervals</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Subscription status</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

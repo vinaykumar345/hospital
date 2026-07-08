@@ -175,6 +175,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'White-label system',
                 subtitle: 'Customize logo, colors, mobile assets, email templates, and domain branding.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'Subscription management',
+                subtitle: 'Manage SaaS plans, tenant subscriptions, billing intervals, and subscription status.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],
