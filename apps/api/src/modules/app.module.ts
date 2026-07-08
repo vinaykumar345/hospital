@@ -15,6 +15,7 @@ import { PharmacyModule } from "./pharmacy/pharmacy.module.js";
 import { RbacModule } from "./rbac/rbac.module.js";
 import { StaffModule } from "./staff/staff.module.js";
 import { TenancyModule } from "./tenancy/tenancy.module.js";
+import { WhiteLabelModule } from "./white-label/white-label.module.js";
 
 @Module({
   imports: [
@@ -35,7 +36,8 @@ import { TenancyModule } from "./tenancy/tenancy.module.js";
     PharmacyModule,
     RbacModule,
     StaffModule,
-    TenancyModule
+    TenancyModule,
+    WhiteLabelModule
   ]
 })
 export class AppModule {}

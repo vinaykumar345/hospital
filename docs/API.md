@@ -208,3 +208,12 @@ Voice follow-up endpoints require `AI_AGENT_USE`; calls are queued for provider 
 - `GET /api/v1/dashboards/admin-analytics`
 
 Admin analytics requires `AUDIT_READ` and returns revenue, OPD/IPD, bed occupancy, appointment trends, satisfaction placeholders, and AI operational insights.
+
+## White Label
+
+- `GET /api/v1/white-label/config`
+- `PUT /api/v1/white-label/theme`
+- `POST /api/v1/white-label/assets`
+- `POST /api/v1/white-label/email-templates`
+
+White-label endpoints require `HOSPITAL_PROFILE_MANAGE`.

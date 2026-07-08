@@ -492,6 +492,27 @@ function App() {
         </div>
       </section>
 
+      <section className="tenant-band" aria-label="White-label system">
+        <div className="section-title">
+          <Palette aria-hidden="true" size={20} />
+          <h2>White-Label System</h2>
+        </div>
+        <div className="tenant-actions">
+          <div>
+            <Palette aria-hidden="true" size={18} />
+            <span>Theme colors</span>
+          </div>
+          <div>
+            <Globe2 aria-hidden="true" size={18} />
+            <span>Domain branding</span>
+          </div>
+          <div>
+            <MessageSquareText aria-hidden="true" size={18} />
+            <span>Email templates</span>
+          </div>
+        </div>
+      </section>
+
       <footer>{AI_REVIEW_DISCLAIMER}</footer>
     </main>
   );

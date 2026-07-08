@@ -91,3 +91,7 @@ Hospitals may use reviewed follow-up calls for reminders and care coordination. 
 ## Operational Insights
 
 Administrative insights are for hospital operations teams and may include AI-generated content requiring review.
+
+## Branded Experience
+
+Hospitals may customize logos, colors, domains, email templates, and mobile branding.

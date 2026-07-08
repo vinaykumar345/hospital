@@ -170,6 +170,11 @@ class SetupHomeScreen extends StatelessWidget {
                 title: 'Admin analytics',
                 subtitle: 'Track revenue, OPD/IPD, bed occupancy, appointment trends, and reviewed operational insights.',
               ),
+              SizedBox(height: 12),
+              PatientFeatureCard(
+                title: 'White-label system',
+                subtitle: 'Customize logo, colors, mobile assets, email templates, and domain branding.',
+              ),
               Spacer(),
               Text(aiReviewDisclaimer),
             ],

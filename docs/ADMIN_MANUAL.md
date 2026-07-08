@@ -91,3 +91,7 @@ Administrators configure reviewed call campaigns and telephony provider settings
 ## Admin Analytics
 
 Hospital Admins can review daily revenue, OPD/IPD statistics, bed occupancy, appointment trends, satisfaction metrics, and AI operational insights.
+
+## White Label
+
+Hospital Admins can configure logo assets, colors, mobile splash assets, email templates, and domain branding.

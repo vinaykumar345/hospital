@@ -48,6 +48,8 @@ assert.match(app, /AI Voice Follow-Up Agent/);
 assert.match(app, /Reviewed scripts/);
 assert.match(app, /Admin Analytics/);
 assert.match(app, /Daily revenue/);
+assert.match(app, /White-Label System/);
+assert.match(app, /Theme colors/);
 assert.match(styles, /grid-template-columns/);
 
 console.log("web setup smoke tests passed");

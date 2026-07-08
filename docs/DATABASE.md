@@ -177,3 +177,11 @@ Defined in `apps/api/migrations/0020_ai_voice_follow_up_agent.sql`.
 Defined in `apps/api/migrations/0021_admin_analytics_dashboard.sql`.
 
 - `admin_operational_insights` stores AI-generated operational insights with review disclaimers.
+
+## White-Label Tables
+
+Defined in `apps/api/migrations/0022_white_label_system.sql`.
+
+- `white_label_theme_extensions` stores accent color and custom CSS metadata.
+- `white_label_assets` stores logo, favicon, mobile splash, and email header asset keys.
+- `white_label_email_templates` stores tenant email template overrides.
