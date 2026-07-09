@@ -22,4 +22,8 @@ assert.match(security, /Role-based access control/);
 const renderBlueprint = readFileSync(join(root, "render.yaml"), "utf8");
 assert.doesNotMatch(renderBlueprint, /key:\s*CORS_ORIGIN[\s\S]{0,120}value:\s*"\*"/);
 
+const apiConfigMap = readFileSync(join(root, "infra/k8s/base/api-configmap.yaml"), "utf8");
+assert.match(apiConfigMap, /CORS_ORIGIN:\s*"[^"]+"/);
+assert.doesNotMatch(apiConfigMap, /CORS_ORIGIN:\s*"\*"/);
+
 console.log("production hardening verification passed");

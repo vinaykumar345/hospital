@@ -6,5 +6,6 @@ metadata:
 data:
   NODE_ENV: "production"
   PORT: "3000"
+  CORS_ORIGIN: "https://app.examplehospital.com"
   AI_PROVIDER: "openai"
   AI_MODEL: "gpt-5"

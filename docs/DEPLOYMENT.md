@@ -41,6 +41,8 @@ The current SQL migrations live in `apps/api/migrations`. Until a migration runn
 
 Base manifests live in `infra/k8s/base`. Environment overlays will be added as deployment hardening progresses.
 
+Set `CORS_ORIGIN` in `infra/k8s/base/api-configmap.yaml` (or environment overlay) to the exact web app origin or a comma-separated allowlist. Do not use `*` in production.
+
 ## Secrets
 
 Never commit production secrets. Configure secrets through the target cloud secret manager and mount them into Kubernetes workloads.
