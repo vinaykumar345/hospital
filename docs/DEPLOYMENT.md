@@ -23,10 +23,11 @@ Deploy from the Render dashboard:
 2. Choose **New > Blueprint** and select this repository.
 3. Confirm the services from `render.yaml`.
 4. Enter prompted secret values:
+   - `CORS_ORIGIN`: set this to the exact Render web URL (or comma-separated allowlist), for example `https://ai-hospital-assistant-web-dev.onrender.com`.
    - `S3_BUCKET`: use a dev bucket name, or a placeholder until uploads are wired.
    - `ELASTICSEARCH_URL`: use a managed Elasticsearch/OpenSearch endpoint, or a placeholder until search is tested.
 5. Deploy the Blueprint.
-6. After the API URL is created, replace the API service `CORS_ORIGIN` value with the Render web URL instead of `*`.
+6. Confirm API startup succeeds with the configured `CORS_ORIGIN`; production startup now rejects wildcard origins.
 
 The API health check is:
 

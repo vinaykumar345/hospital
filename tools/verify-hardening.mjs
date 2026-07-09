@@ -19,4 +19,7 @@ const security = readFileSync(join(root, "SECURITY.md"), "utf8");
 assert.match(security, /Tenant isolation/);
 assert.match(security, /Role-based access control/);
 
+const renderBlueprint = readFileSync(join(root, "render.yaml"), "utf8");
+assert.doesNotMatch(renderBlueprint, /key:\s*CORS_ORIGIN[\s\S]{0,120}value:\s*"\*"/);
+
 console.log("production hardening verification passed");
