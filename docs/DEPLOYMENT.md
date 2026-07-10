@@ -43,6 +43,35 @@ Base manifests live in `infra/k8s/base`. Environment overlays will be added as d
 
 Set `CORS_ORIGIN` in `infra/k8s/base/api-configmap.yaml` (or environment overlay) to the exact web app origin or a comma-separated allowlist. Do not use `*` in production.
 
+## Local Minikube Deployment
+
+Use the local Minikube helpers for one-command Kubernetes setup on macOS/Linux:
+
+```bash
+npm run local:k8s:up
+```
+
+This command starts Minikube (qemu + containerd), builds API/web images, loads them into the cluster, applies manifests, and starts local port-forwards.
+
+Local URLs after startup:
+
+- API health: `http://127.0.0.1:3000/api/v1/health`
+- Web: `http://127.0.0.1:8080/`
+
+Check status:
+
+```bash
+npm run local:k8s:status
+```
+
+Stop local deployment (keeps Minikube installed, removes namespace and port-forwards):
+
+```bash
+npm run local:k8s:down
+```
+
+Local development secrets are defined in `infra/k8s/base/api-secret.local.yaml`. Do not reuse these values for production.
+
 ## Secrets
 
 Never commit production secrets. Configure secrets through the target cloud secret manager and mount them into Kubernetes workloads.

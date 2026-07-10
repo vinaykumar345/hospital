@@ -12,7 +12,10 @@
     "verify": "node tools/verify-project-setup.mjs && node tools/verify-observability.mjs && node tools/verify-ci.mjs && node tools/verify-deployment.mjs && node tools/verify-hardening.mjs",
     "lint": "npm run lint --workspaces --if-present",
     "test": "npm run test --workspaces --if-present && npm run verify",
-    "build": "npm run build --workspace @hospital/shared && npm run build --workspace @hospital/api && npm run build --workspace @hospital/web"
+    "build": "npm run build --workspace @hospital/shared && npm run build --workspace @hospital/api && npm run build --workspace @hospital/web",
+    "local:k8s:up": "./tools/minikube-up.sh",
+    "local:k8s:down": "./tools/minikube-down.sh",
+    "local:k8s:status": "./tools/minikube-status.sh"
   },
   "engines": {
     "node": ">=22.0.0",

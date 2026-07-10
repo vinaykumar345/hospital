@@ -16,6 +16,10 @@ spec:
       containers:
         - name: web
           image: ai-hospital-assistant/web:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: PORT
+              value: "80"
           ports:
             - containerPort: 80
           readinessProbe:
